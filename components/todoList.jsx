@@ -31,7 +31,7 @@ function TodoForm({ addTodo }) {
     )
 }
 
-function App() {
+function TodoList() {
     const [todos, setTodos] = useState([
         {
             text: 'learn React',
@@ -62,4 +62,4 @@ function App() {
     )
 }
 
-export default App
+export default TodoList
