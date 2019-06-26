@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import MenuContainer from '../components/menu/menuContainer'
+import Hooks from '../components/hooks'
 
 import * as menuAction from '../actions/menuAction'
 
@@ -62,6 +63,7 @@ class Index extends React.Component {
         return (
             <div className='content'>
                 <MenuContainer />
+                <Hooks />
                 {/* {this.renderError()}
                 {this.renderPending()}
                 {this.renderWidgets()} */}
