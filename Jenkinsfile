@@ -5,7 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		npm run build
+		sh 'npm install'
+		sh 'npm run build'
+		sh 'npm run export'
             }
         }
         stage('Test') {
@@ -16,6 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh '/opt/deployScripts/acoHomepage/' + env.BRANCH_NAME + '_deploy.sh'
             }
         }
     }
