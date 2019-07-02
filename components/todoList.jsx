@@ -13,7 +13,7 @@ function Todo({ todo, index, removeTodo }) {
     )
 }
 
-function TodoForm({ addTodo }) {
+const TodoForm = ({ addTodo }) => {
     const [value, setValue] = useState('')
 
     const handleSubmit = e => {
