@@ -16,6 +16,8 @@ class Index extends React.Component {
     }
 
     renderWidgets() {
+        console.log("widgets", this.props);
+        
         const { widgets } = this.props
 
         if (widgets && widgets.length > 0) {
@@ -55,18 +57,14 @@ class Index extends React.Component {
         this.props.loadMenu(1)
     }
 
-    componentWillUnmount() {
-
-    }
-
     render() {
         return (
             <div className='content'>
                 <MenuContainer />
-                <TodoList />
-                {/* {this.renderError()}
+                {/* <TodoList /> */}
+                {this.renderError()}
                 {this.renderPending()}
-                {this.renderWidgets()} */}
+                {this.renderWidgets()}
             </div>
         )
     }
