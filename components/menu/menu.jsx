@@ -4,7 +4,7 @@ import { Container, Row, Col, Button } from 'reactstrap'
 import Link from 'next/link'
 
 class Menu extends React.Component {
-    static PropTypes = {
+    static propTypes = {
         items: PropTypes.array
     }
 
