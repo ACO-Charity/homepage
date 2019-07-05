@@ -14,4 +14,11 @@ import menu from './menu';
 
 mock.onGet('/rest/menu/1').reply(200, menu);
 
+/**
+ * Get footer
+ */
+import footer from './footer';
+
+mock.onGet('/rest/footer/1').reply(200, footer);
+
 export default mockAxios
