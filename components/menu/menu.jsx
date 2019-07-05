@@ -23,16 +23,16 @@ class Menu extends React.Component {
             <Col className='menu'>
                 <nav className='main-nav float-right'>
                     <ul>
-                        {items && items.map(item => this.renderItems(item))}
+                        {items && items.map((item,index) => this.renderItems(item,index))}
                     </ul>
                 </nav>
             </Col>
         )
     }
 
-    renderItems = items => {
+    renderItems = (items,index) => {
         return (
-            <li>
+            <li key={index}>
                 <Link href={items.link}>
                     <a>
                         {items.name}
