@@ -11,7 +11,9 @@ class Menu extends React.Component {
     renderLogo = () => {
         return (
             <Col className='home-logo' md='2'>
-                <a href="/"><img src="/static/img/ACO_Bird_3%20750x750.png" alt=""/></a>
+                <Link href="/">
+                    <a><img src="/static/img/ACO_Bird_3%20750x750.png" alt="" /></a>
+                </Link>
             </Col>
         )
     }
