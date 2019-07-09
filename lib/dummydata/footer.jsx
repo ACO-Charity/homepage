@@ -1,16 +1,16 @@
 export default
     {
-        "id": 1,
-        "name": "Menu",
+        "id": 2,
+        "name": "Footer",
         "items": [{
             "name": "Spalte 1",
             "type": "column",
-            "cildren": [
+            "children": [
                 {
                     "name": "Impressum",
                     "id": 2,
                     "type": "link",
-                    "link": "#impressum",
+                    "link": "/impressum",
                     "parent": 1,
                 }
             ]
@@ -18,12 +18,12 @@ export default
         {
             "name": "Spalte 2",
             "type": "column",
-            "cildren": [
+            "children": [
                 {
                     "name": "Datenschutz",
                     "id": 2,
                     "type": "link",
-                    "link": "#datenschutz",
+                    "link": "/datenschutz",
                     "parent": 1,
                 }
             ]
