@@ -1,0 +1,19 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+	height: 45px;
+	font-size: 35px;
+	color: $blue;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	visibility: hidden;
+	&:hover {
+		bottom: 30px;
+	}
+}
