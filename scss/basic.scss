@@ -1,5 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
+
+// Home
 @import './home.scss';
 
 // Components
 @import 'components/menu/menu.scss';
+@import 'components/footer/footer.scss';
+@import 'components/images.scss';
+
+// UI
+@import 'components/UI/Buttons/scrollToTopButton.scss'

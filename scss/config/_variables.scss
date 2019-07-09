@@ -1,70 +1,64 @@
 // Colors
-$main-color         :#000;
-$white				:#FFFFFF;
-$art-color          :#999;
-$text-color			:#444;
+$main-color :#000;
+$white:#FFFFFF;
+$art-color :#999;
+$text-color:#444;
 
-$red                : #E30613;
-$green			    : #2D7B5B;
-$dark-green			: #11402C;
-$grey               : #ECEDE5;
-$dark-grey			: #BEC2AB;
+$red : #E30613;
+$green : #2D7B5B;
+$dark-green: #11402C;
+$grey : #ECEDE5;
+$dark-grey: #BEC2AB;
 
-$orange				: #FF871C;
-$blue				: #8BBFD5;
+$orange: #FF871C;
+$blue: #0056b3;
 
-$warning			: $orange;
-$info				: $blue;
-$success 			: $green;
+$warning: $orange;
+$info: $blue;
+$success: $green;
 
 // Border radius
-
-$border-radius		: 0;
-$border-radius-lg	: 0;
-$border-radius-sm	: 0;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 // Fonts
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
-$font-family-sans-serif	: 'Roboto', sans-serif;
-$font-size-base			: 1rem;
-$font-size-base-in-px	: 16px;
+$font-family-sans-serif: 'Roboto',
+sans-serif;
+$font-size-base: 1rem;
+$font-size-base-in-px: 16px;
 
-$h1-font-size			: 44px;
-$h2-font-size			: 34px;
-$h3-font-size			: 26px;
-$h4-font-size			: 20px;
+$h1-font-size: 44px;
+$h2-font-size: 34px;
+$h3-font-size: 26px;
+$h4-font-size: 20px;
 
-$line-height            : 150%;
+$line-height : 150%;
 
 // Alerts
-
-$alert-bg-level:                    2 !default;
-$alert-border-level:                2 !default;
-$alert-color-level:                 -10 !default;
+$alert-bg-level: 2 !default;
+$alert-border-level: 2 !default;
+$alert-color-level: -10 !default;
 
 // Z-Index
-
-$z-index-header 	: 3;
-$z-index-mega-menu 	: 2;
-$z-index-sidebar 	: 4;
-$z-index-dialog 	: 5;
+$z-index-header: 3;
+$z-index-mega-menu: 2;
+$z-index-sidebar: 4;
+$z-index-dialog: 5;
 
 // Grid
 
 // Define the maximum width of `.container` for different screen sizes.
-$container-max-widths: (
-	sm: 540px,
+$container-max-widths: (sm: 540px,
 	md: 720px,
 	lg: 960px,
-	xl: 1210px
-);
+	xl: 1210px);
 
 $grid-gutter-width: 30px;
 
 // Sidebar
-
 $sidebar-width: 100%;
 
 // Widgets
