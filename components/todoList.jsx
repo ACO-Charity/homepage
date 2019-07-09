@@ -4,11 +4,7 @@ function Todo({ todo, index, removeTodo }) {
     return (
         <div className='todo'>
             {todo.text}
-            <div>
-                <button onClick={() => removeTodo(index)}>
-                    x
-                </button>
-            </div>
+            <button onClick={() => removeTodo(index)}> x </button>
         </div>
     )
 }

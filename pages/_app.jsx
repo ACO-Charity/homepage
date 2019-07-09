@@ -13,7 +13,7 @@ class MyApp extends App {
             <Container>
                 <Head>
                     <title>Asia Charity Organization (ACO) e.V.</title>
-                    <link rel="icon" href="/static/img/favicon.ico" sizes="any" />
+                    <link rel="icon" href="/static/img/logo/favicon.ico" sizes="any" />
                     <meta
                         name="viewport"
                         content="initial-scale=1.0, width=device-width"
