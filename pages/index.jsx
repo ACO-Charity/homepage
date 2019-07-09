@@ -27,7 +27,6 @@ class Index extends React.Component {
             </body>
         )
 
-        // console.log("widgets", this.props);
         // const { widgets } = this.props
 
         // if (widgets && widgets.length > 0) {
@@ -82,7 +81,6 @@ class Index extends React.Component {
 }
 
 const mapStateToProps = store => {
-    // console.log("index store", store)
     const { menu, footer } = store
     return menu, footer
 }

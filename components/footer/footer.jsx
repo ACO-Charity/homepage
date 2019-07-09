@@ -20,8 +20,6 @@ class Footer extends React.Component {
     }
 
     render() {
-        console.log("footer props:", this.props);
-
         return (
             <footer className='footer'>
                 <Container>

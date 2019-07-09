@@ -22,7 +22,7 @@ class Menu extends React.Component {
 
     renderMenu = () => {
         const { items } = this.props
-        console.log("menuitems", items);
+        
         return (
             <Col className='menu'>
                 <nav className='main-nav float-right'>
