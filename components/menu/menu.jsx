@@ -14,7 +14,7 @@ class Menu extends React.Component {
         return (
             <Col className='home-logo' md='2'>
                 <Link href="/">
-                    <a><img src="/static/img/ACO_Bird_3%20750x750.png" alt="" />ACO Charity</a>
+                    <a><img src="/static/img/logo/ACO_Bird_3%20750x750.png" alt="" />ACO Charity</a>
                 </Link>
             </Col>
         )
