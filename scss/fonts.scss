@@ -1,0 +1,15 @@
+$font-folder: '/static/fonts/';
+
+@font-face {
+  font-family: 'ACO';
+  src: url($font-folder + "AlegreyaSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ACO';
+  src: url($font-folder + "AlegreyaSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
