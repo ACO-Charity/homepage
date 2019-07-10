@@ -8,7 +8,11 @@
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 
     .home-logo{
+        min-width: 280px;
         a{
+            text-decoration: none;
+            color: #348FE0!important;
+            font-size: 2em;
             &:focus{
                 outline: none;
             }

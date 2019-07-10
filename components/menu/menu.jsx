@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import { Container, Row, Col, Button } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 
 import RenderLinks from '../UI/renderLinks';
 
@@ -14,7 +14,7 @@ class Menu extends React.Component {
         return (
             <Col className='home-logo' md='2'>
                 <Link href="/">
-                    <a><img src="/static/img/logo/ACO_Bird_3%20750x750.png" alt="" /></a>
+                    <a><img src="/static/img/ACO_Bird_3%20750x750.png" alt="" />ACO Charity</a>
                 </Link>
             </Col>
         )
