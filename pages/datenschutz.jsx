@@ -4,7 +4,7 @@ class Datenschutz extends React.Component {
     render() {
         return (
             <div>
-                datenschutz
+                Datenschutz Seite
             </div>
         )
     }
