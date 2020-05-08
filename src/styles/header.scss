@@ -6,6 +6,14 @@ header {
   width: 100%;
   font-weight: bold;
 
+  button.btn {
+    font-weight: bold;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
   &.scrolling {
     .top-nav {
       height: 0;
@@ -63,14 +71,6 @@ header {
     #nav-logo {
       width: 100px;
       height: auto;
-    }
-
-    button.btn {
-      font-weight: bold;
-
-      &:hover {
-        color: $primary-color;
-      }
     }
   }
 
