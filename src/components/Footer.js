@@ -47,7 +47,7 @@ const Footer = props => {
                             <Icon size={40} icon={facebookOfficial}/>
                         </div>
                         <div className="sm-item" onClick={openYoutube}>
-                            <Icon size={50} icon={youtubePlay}/>
+                            <Icon size={44} icon={youtubePlay}/>
                         </div>
                     </div>
                     <div className="cta-contact col-9">
