@@ -1,0 +1,46 @@
+header {
+  background: $primary-color;
+  color: white;
+  position: fixed;
+  width: 100%;
+
+  .top-nav {
+    height: 90px;
+    display: flex;
+    align-items: center;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #nav-logo {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  nav {
+    background: $secondary-color;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    .nav-items {
+      display: flex;
+
+      .nav-item {
+        cursor: pointer;
+        margin-right: 30px;
+        text-transform: uppercase;
+
+        &.active,
+        &:hover {
+          color: $primary-color
+        }
+      }
+    }
+  }
+
+}
