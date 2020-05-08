@@ -3,6 +3,7 @@ header {
   color: white;
   position: fixed;
   width: 100%;
+  @include no-select;
 
   .top-nav {
     height: 90px;
