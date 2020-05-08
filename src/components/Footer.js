@@ -30,7 +30,7 @@ const Footer = props => {
         <footer>
             <div className="container">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-3 d-flex align-items-center">
                         <img id="footer-logo" src={whiteLogo} alt="LOGO"/>
                     </div>
                     <div className="contact-us col-9">
