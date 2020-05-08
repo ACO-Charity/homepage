@@ -21,7 +21,10 @@ const Header = props => {
             <div className="top-nav">
                 <div className="container">
                     <img id="nav-logo" src={icon} alt="LOGO"/>
-                    <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
+                    {
+                        !isScrolling &&
+                        <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
+                    }
                 </div>
             </div>
 
@@ -38,6 +41,12 @@ const Header = props => {
                                     {labels_de[page]}
                                 </div>
                             )
+                        }
+                        {
+                            isScrolling &&
+                            <div className="nav-item" style={{marginLeft: 'auto'}}>
+                                <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
+                            </div>
                         }
                     </div>
                 </div>
