@@ -14,6 +14,15 @@ header {
     }
   }
 
+  .burger-menu{
+    height: 60px;
+    max-height: 60px;
+
+    #nav-logo-scroll {
+      display: none;
+    }
+  }
+
   &.scrolling {
     .top-nav {
       height: 0;
@@ -25,10 +34,10 @@ header {
       animation: toPrimaryColBack 0.4s forwards;
 
       #nav-logo-scroll {
+        display: block;
         width: 80px;
         height: auto;
-        position: absolute;
-        right: 40px;
+        margin-right: 1em;
       }
 
       .container {

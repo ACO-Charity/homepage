@@ -5,6 +5,7 @@ import icon from '../img/Aco_Logo_Weiss.svg';
 import {Icon} from 'react-icons-kit';
 import {ic_favorite} from 'react-icons-kit/md/ic_favorite';
 import links from '../enums/links';
+import {ic_menu} from 'react-icons-kit/md/ic_menu'
 
 const Header = props => {
 
@@ -35,19 +36,27 @@ const Header = props => {
             <nav>
                 <div className="container">
                     <div className="nav-items">
-                        {
-                            Object.keys(pages).map((page, index) =>
-                                <div className="nav-item" key={index} onClick={() => scrollTo(page)}>
-                                    {labels_de[page]}
+                        <div className="d-none d-md-flex">
+                            {
+                                Object.keys(pages).map((page, index) =>
+                                    <div className="nav-item" key={index} onClick={() => scrollTo(page)}>
+                                        {labels_de[page]}
+                                    </div>
+                                )
+                            }
+                            {
+                                isScrolling &&
+                                <div className="nav-item" style={{marginLeft: 'auto'}}>
+                                    <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
                                 </div>
-                            )
-                        }
-                        {
-                            isScrolling &&
-                            <div className="nav-item" style={{marginLeft: 'auto'}}>
-                                <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
+                            }
+                        </div>
+                        <div className="burger-menu d-flex d-md-none position-relative align-items-center">
+                            <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
+                            <div className="nav-item">
+                                <Icon size={30} icon={ic_menu}/>
                             </div>
-                        }
+                        </div>
                     </div>
                 </div>
             </nav>
