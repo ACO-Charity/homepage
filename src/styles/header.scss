@@ -3,7 +3,8 @@ header {
   color: white;
   position: fixed;
   width: 100%;
-  @include no-select;
+  font-weight: bold;
+
 
   .top-nav {
     height: 90px;
@@ -19,6 +20,10 @@ header {
     #nav-logo {
       width: 100px;
       height: auto;
+    }
+
+    button.btn {
+      font-weight: bold;
     }
   }
 
