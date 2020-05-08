@@ -1,0 +1,69 @@
+footer {
+  padding-top: 2em;
+  background-color: $primary-color;
+  color: white;
+  font-weight: bold;
+
+  hr {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .contact-us {
+    p {
+      font-weight: normal;
+      font-size: 26px;
+    }
+  }
+
+  #footer-logo {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    font-weight: normal;
+    padding-bottom: 1em;
+
+    a {
+      color: white !important;
+      text-transform: uppercase;
+      padding: 0 1em;
+
+      &:hover {
+        color: $secondary-color !important;
+      }
+    }
+  }
+
+  .socialmedia {
+    .sm-item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .cta-contact,
+  .contact-us {
+    padding-left: 80px;
+  }
+
+  .cta-contact {
+    button.btn.btn-icon.btn-primary {
+      font-size: 20px;
+      font-weight: bold;
+      height: 50px !important;
+      padding: 0 40px !important;
+    }
+  }
+
+  .footer-copyright {
+    font-weight: normal;
+    padding-bottom: 1em;
+  }
+}

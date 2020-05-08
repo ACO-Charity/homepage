@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from './components/Header';
 import pages from './enums/pages';
 import labels_de from './i18n/de';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -130,6 +131,7 @@ function App() {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </div>
     );
 }
