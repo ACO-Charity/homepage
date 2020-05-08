@@ -33,10 +33,6 @@ const Header = props => {
             </div>
 
             <nav>
-                {
-                    isScrolling &&
-                    <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
-                }
                 <div className="container">
                     <div className="nav-items">
                         {
