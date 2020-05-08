@@ -16,6 +16,10 @@ const Header = props => {
         window.open(links.PAYPAL_DONATION_LINK, '_blank');
     };
 
+    const scrollTo = (section) => {
+        window.location.href = '#' + section;
+    };
+
     return (
         <header className={headerStyleClass}>
             <div className="top-nav">
@@ -37,7 +41,7 @@ const Header = props => {
                     <div className="nav-items">
                         {
                             Object.keys(pages).map((page, index) =>
-                                <div className="nav-item" key={index}>
+                                <div className="nav-item" key={index} onClick={() => scrollTo(page)}>
                                     {labels_de[page]}
                                 </div>
                             )

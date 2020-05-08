@@ -3,7 +3,8 @@ const labels_de = {
     ABOUT_US: 'Über uns',
     PROJECTS: 'Projekte',
     DONATION: 'Spenden',
-    JOIN_US: 'Mitmachen'
+    JOIN_US: 'Mitmachen',
+    NEWS: 'News'
 };
 
 export default labels_de;
