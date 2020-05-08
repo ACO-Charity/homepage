@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   height="320"
+   width="320"
+   sodipodi:docname="aco_favicon_blue.svg"
+   version="1.1"
+   viewBox="0 0 320.00001 319.99999"
+   data-name="Ebene 1"
+   id="Ebene_1">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="Ebene_1"
+     inkscape:window-maximized="0"
+     inkscape:window-y="1484"
+     inkscape:window-x="0"
+     inkscape:cy="189.10001"
+     inkscape:cx="186.52499"
+     inkscape:zoom="2.1339303"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     id="namedview13"
+     inkscape:window-height="1036"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#265aa6;}.cls-2{fill:#fff;}</style>
+  </defs>
+  <path
+     id="path6"
+     d="m 208.42,199 c 0,0 -33.76,94 -73.87,117.9 0,0 109.76,16 154.55,-100.8 0,0 30.36,-61.76 9.75,-125.52 0,0 -8.86,-19.71 13.34,-44.59 0,0 -46.17,-10 -59.13,8.31 0,0 -12.67,15.2 4.18,46.92 0,0 -42.21,-52.62 -180.08,-96.57 0,0 -1.51,50.51 38.32,82.15 L 74.66,62.48 c 0,0 3.56,43.06 54.54,62.29 0,0 -33.16,-9.72 -39.41,-14.08 0,0 34.59,65.07 118.63,88.31 z"
+     class="cls-1" />
+  <path
+     id="path8"
+     d="m 211.48,205.48 c 0,0 -63.24,-13.2 -103.89,-61.42 0,0 -71.08,6.16 -102.41,-13.66 0,0 -7.69,30.75 52.18,37.44 0,0 -27.15,5.29 -42.18,-2.21 0,0 9.09,39.69 61.47,43.31 0,0 -17.85,8.15 -24.29,6.78 0,0 55.08,57.74 129.37,46.72 z"
+     class="cls-1" />
+  <circle
+     id="circle10"
+     r="5.2399998"
+     cy="65.059998"
+     cx="271.26001"
+     class="cls-2" />
+</svg>
