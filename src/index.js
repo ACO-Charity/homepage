@@ -4,6 +4,18 @@ import './styles/styles.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+let lightFavicon = document.querySelector('link#light-theme-icon');
+let darkFavicon = document.querySelector('link#dark-theme-icon');
+
+const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+if (matcher.matches) {
+    lightFavicon.remove();
+    document.head.append(darkFavicon);
+} else {
+    darkFavicon.remove();
+}
+console.log('matcher', matcher);
+
 ReactDOM.render(
     <React.StrictMode>
         <App/>
