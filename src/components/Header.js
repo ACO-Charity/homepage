@@ -7,8 +7,12 @@ import {ic_favorite} from 'react-icons-kit/md/ic_favorite';
 
 const Header = props => {
 
+    const isScrolling = props.scrollPosY > 40;
+
+    const headerStyleClass = isScrolling ? 'scrolling' : '';
+
     return (
-        <header>
+        <header className={headerStyleClass}>
             <div className="top-nav">
                 <div className="container">
                     <img id="nav-logo" src={icon} alt="LOGO"/>
@@ -17,6 +21,10 @@ const Header = props => {
             </div>
 
             <nav>
+                {
+                    isScrolling &&
+                    <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
+                }
                 <div className="container">
                     <div className="nav-items">
                         {
@@ -32,7 +40,5 @@ const Header = props => {
         </header>
     );
 };
-
-Header.propTypes = {};
 
 export default Header;
