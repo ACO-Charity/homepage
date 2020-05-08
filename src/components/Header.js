@@ -4,6 +4,7 @@ import labels_de from '../i18n/de';
 import icon from '../img/Aco_Logo_Weiss.svg';
 import {Icon} from 'react-icons-kit';
 import {ic_favorite} from 'react-icons-kit/md/ic_favorite';
+import links from '../enums/links';
 
 const Header = props => {
 
@@ -11,12 +12,16 @@ const Header = props => {
 
     const headerStyleClass = isScrolling ? 'scrolling' : '';
 
+    const onDonationClick = () => {
+        window.open(links.PAYPAL_DONATION_LINK, '_blank');
+    };
+
     return (
         <header className={headerStyleClass}>
             <div className="top-nav">
                 <div className="container">
                     <img id="nav-logo" src={icon} alt="LOGO"/>
-                    <button className="btn btn-icon btn-primary"><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
+                    <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
                 </div>
             </div>
 
