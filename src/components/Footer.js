@@ -6,9 +6,6 @@ import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial';
 import {youtubePlay} from 'react-icons-kit/fa/youtubePlay';
 import {ic_mail} from 'react-icons-kit/md/ic_mail';
 import links from '../enums/links';
-import languages from "../enums/languages";
-import labels_de from "../i18n/de";
-import labels_en from "../i18n/en";
 
 const Footer = props => {
 
@@ -28,15 +25,6 @@ const Footer = props => {
     const openYoutube = () => {
         window.open(links.YOUTUBE, '_blank');
     };
-
-    const label = () => {
-        switch (props.selectedLanguage) {
-            case languages.DE:
-                return labels_de;
-            case languages.EN:
-                return labels_en;
-        }
-    }
 
     return (
         <footer>
@@ -65,13 +53,13 @@ const Footer = props => {
                     <div className="cta-contact col-9">
                         <button className="btn btn-primary btn-icon" onClick={mailToUs}>
                             <Icon size={28} icon={ic_mail}/>
-                            {label().CONTACT_US}
+                            {props.label.CONTACT_US}
                         </button>
                     </div>
                 </div>
                 <hr/>
                 <div className="footer-links d-flex align-items-center justify-content-center">
-                    <a href="/imprint">{label().IMPRINT}</a> | <a href="/privacy-policy">{label().PRIVACY_POLICY}</a>
+                    <a href="/imprint">{props.label.IMPRINT}</a> | <a href="/privacy-policy">{props.label.PRIVACY_POLICY}</a>
                 </div>
                 <div className="footer-copyright d-flex align-items-center justify-content-center">
                     <span>2020 © Asia Charity Organization (ACO) e.V.</span>

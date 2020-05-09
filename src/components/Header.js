@@ -1,14 +1,11 @@
 import React from 'react';
 import pages from '../enums/pages';
-import labels_de from '../i18n/de';
 import icon from '../img/Aco_Logo_Weiss.svg';
 import {Icon} from 'react-icons-kit';
 import {ic_favorite} from 'react-icons-kit/md/ic_favorite';
 import links from '../enums/links';
 import {ic_menu} from 'react-icons-kit/md/ic_menu';
 import LanguageSelector from "./LanguageSelector";
-import languages from "../enums/languages";
-import labels_en from "../i18n/en";
 
 const Header = props => {
 
@@ -24,15 +21,6 @@ const Header = props => {
         window.location.href = '#' + section;
     };
 
-    const label = () => {
-        switch (props.selectedLanguage) {
-            case languages.DE:
-                return labels_de;
-            case languages.EN:
-                return labels_en;
-        }
-    }
-
     return (
         <header className={headerStyleClass}>
             <div className="top-nav">
@@ -43,7 +31,7 @@ const Header = props => {
                     </div>
                     {
                         !isScrolling &&
-                        <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {label().DONATE_BUTTON}</button>
+                        <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {props.label.DONATE_BUTTON}</button>
                     }
                 </div>
             </div>
@@ -55,7 +43,7 @@ const Header = props => {
                             {
                                 Object.keys(pages).map((page, index) =>
                                     <div className="nav-item" key={index} onClick={() => scrollTo(page)}>
-                                        {label()[page]}
+                                        {props.label[page]}
                                     </div>
                                 )
                             }
@@ -66,7 +54,7 @@ const Header = props => {
                                             <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>
                                         </div>
                                         <div className="nav-item" style={{marginLeft: 'auto'}}>
-                                            <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {label().DONATE_BUTTON}</button>
+                                            <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {props.label.DONATE_BUTTON}</button>
                                         </div>
                                     </>
                             }

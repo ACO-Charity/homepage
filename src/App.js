@@ -36,11 +36,11 @@ function App() {
 
     return (
         <div className="aco-web">
-            <Header scrollPosY={scrollPosY} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
+            <Header scrollPosY={scrollPosY} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} label={label()}/>
             <div className="content">
                 <LandingPage label={label()} />
             </div>
-            <Footer selectedLanguage={selectedLanguage}/>
+            <Footer selectedLanguage={selectedLanguage} label={label()}/>
         </div>
     );
 }
