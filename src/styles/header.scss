@@ -5,6 +5,8 @@ header {
   top: 0;
   width: 100%;
   font-weight: bold;
+  border-bottom: 1px solid $secondary-color;
+  z-index: 9;
   @include no-select;
 
   button.btn {
