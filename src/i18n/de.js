@@ -1,4 +1,8 @@
+import imprintText from "./imprint-text";
+import privacyText from "./privacy-text";
+
 const labels_de = {
+    /*PAGES*/
     HOME: 'Home',
     ABOUT_US: 'Über uns',
     PROJECTS: 'Projekte',
@@ -7,8 +11,18 @@ const labels_de = {
     NEWS: 'News',
     IMPRINT: 'Impressum',
     PRIVACY_POLICY: 'Datenschutz',
+
+    /*CTA*/
     CONTACT_US: 'Schreib uns',
-    DONATE_BUTTON: 'Spenden'
+    DONATE_BUTTON: 'Spenden',
+    BACK: 'zurück',
+    CONTACT: 'kontakt',
+    EXECUTIVES: 'Vorstände',
+
+    /*TEXT*/
+    IMPRINT_TEXT: imprintText.DE,
+    PRIVACY_TEXT: privacyText.DE
+
 };
 
 export default labels_de;

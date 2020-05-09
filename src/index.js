@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/styles.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter} from "react-router-dom";
 
 let lightFavicon = document.querySelector('link#light-theme-icon');
 let darkFavicon = document.querySelector('link#dark-theme-icon');
@@ -18,7 +19,9 @@ console.log('matcher', matcher);
 
 ReactDOM.render(
     <React.StrictMode>
-        <App/>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
 );

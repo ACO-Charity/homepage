@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Header from './components/Header';
-import pages from './enums/pages';
 import labels_de from './i18n/de';
 import Footer from './components/Footer';
 import languages from "./enums/languages";
 import labels_en from "./i18n/en";
+import LandingPage from "./components/LandingPage";
+import {Switch, Route, Redirect} from "react-router-dom";
+import Imprint from "./components/Imprint";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
 
@@ -35,115 +38,21 @@ function App() {
 
     return (
         <div className="aco-web">
-            <Header scrollPosY={scrollPosY} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
+            <Header scrollPosY={scrollPosY} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} label={label()}/>
             <div className="content">
-                <section id={pages.ABOUT_US}>
-                    <div className="container jumbotron">
-                        <h1>{label()[pages.ABOUT_US]}</h1>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                    </div>
-                </section>
-                <section id={pages.NEWS}>
-                    <div className="container jumbotron">
-                        <h1>{label()[pages.NEWS]}</h1>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                    </div>
-                </section>
-                <section id={pages.PROJECTS}>
-                    <div className="container jumbotron">
-                        <h1>{label()[pages.PROJECTS]}</h1>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                    </div>
-                </section>
-                <section id={pages.DONATION}>
-                    <div className="container jumbotron">
-                        <h1>{label()[pages.DONATION]}</h1>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                    </div>
-                </section>
-                <section id={pages.JOIN_US}>
-                    <div className="container jumbotron">
-                        <h1>{label()[pages.JOIN_US]}</h1>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                        <p> aksöldksaldsaöld</p>
-                        <p>asdkölsakdölsakd</p>
-                        <p>sadölsak</p>
-                    </div>
-                </section>
+                <Switch>
+                    <Route path="/imprint">
+                        <Imprint label={label()} />
+                    </Route>
+                    <Route path="/privacy-policy">
+                        <PrivacyPolicy label={label()} />
+                    </Route>
+                    <Route path="/">
+                        <LandingPage label={label()} />
+                    </Route>
+                </Switch>
             </div>
-            <Footer selectedLanguage={selectedLanguage}/>
+            <Footer selectedLanguage={selectedLanguage} label={label()}/>
         </div>
     );
 }

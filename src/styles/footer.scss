@@ -23,7 +23,8 @@ footer {
     font-weight: normal;
     padding-bottom: 1em;
 
-    a {
+    .footer-link {
+      cursor: pointer;
       color: white !important;
       text-transform: uppercase;
       padding: 0 1em;
