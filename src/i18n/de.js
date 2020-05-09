@@ -1,3 +1,5 @@
+import imprintText from "./imprint-text";
+
 const labels_de = {
     /*PAGES*/
     HOME: 'Home',
@@ -12,7 +14,12 @@ const labels_de = {
     /*CTA*/
     CONTACT_US: 'Schreib uns',
     DONATE_BUTTON: 'Spenden',
-    BACK: 'zurück'
+    BACK: 'zurück',
+    CONTACT: 'kontakt',
+    EXECUTIVES: 'Vorstände',
+
+    /*TEXT*/
+    IMPRINT_TEXT: imprintText.DE
 
 };
 

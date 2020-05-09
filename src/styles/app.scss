@@ -2,6 +2,10 @@ a {
   color: $secondary-color !important;
 }
 
+h1{
+  text-transform: capitalize;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -30,6 +34,6 @@ button:focus {
 
 .aco-web {
   .content {
-    margin-top: 150px;
+    margin-top: 180px;
   }
 }

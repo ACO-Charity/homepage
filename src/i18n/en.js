@@ -1,3 +1,5 @@
+import imprintText from "./imprint-text";
+
 const labels_en = {
     /*PAGES*/
     HOME: 'Home',
@@ -12,7 +14,12 @@ const labels_en = {
     /*CTA*/
     CONTACT_US: 'contact us',
     DONATE_BUTTON: 'donate',
-    BACK: 'back'
+    BACK: 'back',
+    CONTACT: 'contact',
+    EXECUTIVES: 'Executive Board',
+
+    /*TEXT*/
+    IMPRINT_TEXT: imprintText.EN
 
 };
 
