@@ -6,6 +6,7 @@ import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial';
 import {youtubePlay} from 'react-icons-kit/fa/youtubePlay';
 import {ic_mail} from 'react-icons-kit/md/ic_mail';
 import links from '../enums/links';
+import {useHistory} from 'react-router-dom';
 
 const Footer = props => {
 
@@ -24,6 +25,16 @@ const Footer = props => {
 
     const openYoutube = () => {
         window.open(links.YOUTUBE, '_blank');
+    };
+
+    const history = useHistory();
+
+    const goImprint = () => {
+        history.push('imprint')
+    };
+
+    const goPrivacyPolicy = () => {
+        history.push('privacy-policy')
     };
 
     return (
@@ -59,7 +70,7 @@ const Footer = props => {
                 </div>
                 <hr/>
                 <div className="footer-links d-flex align-items-center justify-content-center">
-                    <a href="/imprint">{props.label.IMPRINT}</a> | <a href="/privacy-policy">{props.label.PRIVACY_POLICY}</a>
+                    <span className='footer-link' onClick={goImprint}>{props.label.IMPRINT}</span> | <span className='footer-link' onClick={goPrivacyPolicy}>{props.label.PRIVACY_POLICY}</span>
                 </div>
                 <div className="footer-copyright d-flex align-items-center justify-content-center">
                     <span>2020 © Asia Charity Organization (ACO) e.V.</span>
