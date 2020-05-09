@@ -42,10 +42,10 @@ function App() {
             <div className="content">
                 <Switch>
                     <Route path="/imprint">
-                        <Imprint />
+                        <Imprint label={label()} />
                     </Route>
                     <Route path="/privacy-policy">
-                        <PrivacyPolicy />
+                        <PrivacyPolicy label={label()} />
                     </Route>
                     <Route path="/">
                         <LandingPage label={label()} />

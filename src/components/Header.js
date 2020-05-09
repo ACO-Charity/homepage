@@ -5,11 +5,15 @@ import {Icon} from 'react-icons-kit';
 import {ic_favorite} from 'react-icons-kit/md/ic_favorite';
 import links from '../enums/links';
 import {ic_menu} from 'react-icons-kit/md/ic_menu';
+import {ic_keyboard_backspace} from 'react-icons-kit/md/ic_keyboard_backspace';
 import LanguageSelector from "./LanguageSelector";
+import { useLocation, useHistory } from 'react-router-dom'
 
 const Header = props => {
 
     const isScrolling = props.scrollPosY > 40;
+    const location = useLocation();
+    const history = useHistory();
 
     const headerStyleClass = isScrolling ? 'scrolling' : '';
 
@@ -20,6 +24,14 @@ const Header = props => {
     const scrollTo = (section) => {
         window.location.href = '#' + section;
     };
+
+    const isLandingPage = () => {
+        return location.pathname === "/";
+    }
+
+    const goLandingPage = () => {
+        history.push("/");
+    }
 
     return (
         <header className={headerStyleClass}>
@@ -41,12 +53,21 @@ const Header = props => {
                     <div className="nav-items">
                         <div className="d-none d-md-flex flex-grow-1">
                             {
+                                isLandingPage() &&
                                 Object.keys(pages).map((page, index) =>
                                     <div className="nav-item" key={index} onClick={() => scrollTo(page)}>
                                         {props.label[page]}
                                     </div>
                                 )
                             }
+
+                            {
+                                !isLandingPage() &&
+                                    <div className="nav-item d-flex align-items-center" onClick={goLandingPage}>
+                                        <Icon size={26} icon={ic_keyboard_backspace}/><span className="ml-2">{props.label.BACK}</span>
+                                    </div>
+                            }
+
                             {
                                 isScrolling &&
                                     <>
