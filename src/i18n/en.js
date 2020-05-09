@@ -1,4 +1,5 @@
 import imprintText from "./imprint-text";
+import privacyText from "./privacy-text";
 
 const labels_en = {
     /*PAGES*/
@@ -19,7 +20,8 @@ const labels_en = {
     EXECUTIVES: 'Executive Board',
 
     /*TEXT*/
-    IMPRINT_TEXT: imprintText.EN
+    IMPRINT_TEXT: imprintText.EN,
+    PRIVACY_TEXT: privacyText.EN
 
 };
 

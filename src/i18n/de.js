@@ -1,4 +1,5 @@
 import imprintText from "./imprint-text";
+import privacyText from "./privacy-text";
 
 const labels_de = {
     /*PAGES*/
@@ -19,7 +20,8 @@ const labels_de = {
     EXECUTIVES: 'Vorstände',
 
     /*TEXT*/
-    IMPRINT_TEXT: imprintText.DE
+    IMPRINT_TEXT: imprintText.DE,
+    PRIVACY_TEXT: privacyText.DE
 
 };
 

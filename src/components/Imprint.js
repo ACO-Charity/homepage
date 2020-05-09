@@ -3,7 +3,7 @@ import links from "../enums/links";
 
 const Imprint = props => {
     return (
-        <div id="imprint" className="jumbotron">
+        <div id="imprint" className="jumbotron container">
             <h1>{props.label.IMPRINT}</h1>
             <div className="address mt-4">
                 <h3>{props.label.IMPRINT_TEXT.HQ}</h3>
