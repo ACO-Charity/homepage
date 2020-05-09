@@ -5,6 +5,7 @@ header {
   top: 0;
   width: 100%;
   font-weight: bold;
+  @include no-select;
 
   button.btn {
     font-weight: bold;
@@ -27,6 +28,7 @@ header {
     .top-nav {
       height: 0;
       animation: slide-in 0.5s forwards;
+      overflow: hidden;
     }
 
     nav {
@@ -69,7 +71,6 @@ header {
     display: flex;
     align-items: center;
     animation: slide-out 1s forwards;
-    overflow: hidden;
 
     .container {
       display: flex;

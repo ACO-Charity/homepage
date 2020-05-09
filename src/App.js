@@ -4,10 +4,12 @@ import Header from './components/Header';
 import pages from './enums/pages';
 import labels_de from './i18n/de';
 import Footer from './components/Footer';
+import languages from "./enums/languages";
 
 function App() {
 
     const [scrollPosY, setScrollPosY] = useState(0);
+    const [selectedLanguage,setSelectedLanguage] = useState(languages.DE);
 
     const handleScroll = (event) => {
         setScrollPosY(window.pageYOffset);
@@ -23,7 +25,7 @@ function App() {
 
     return (
         <div className="aco-web">
-            <Header scrollPosY={scrollPosY}/>
+            <Header scrollPosY={scrollPosY} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
             <div className="content">
                 <section id={pages.ABOUT_US}>
                     <div className="container jumbotron">
