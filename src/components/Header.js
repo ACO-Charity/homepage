@@ -43,7 +43,7 @@ const Header = props => {
                     </div>
                     {
                         !isScrolling &&
-                        <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {label()['DONATION']}</button>
+                        <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {label().DONATE_BUTTON}</button>
                     }
                 </div>
             </div>
@@ -66,7 +66,7 @@ const Header = props => {
                                             <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>
                                         </div>
                                         <div className="nav-item" style={{marginLeft: 'auto'}}>
-                                            <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {label()['DONATION']}</button>
+                                            <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {label().DONATE_BUTTON}</button>
                                         </div>
                                     </>
                             }

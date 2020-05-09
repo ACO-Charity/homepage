@@ -4,7 +4,11 @@ const labels_de = {
     PROJECTS: 'Projekte',
     DONATION: 'Spenden',
     JOIN_US: 'Mitmachen',
-    NEWS: 'News'
+    NEWS: 'News',
+    IMPRINT: 'Impressum',
+    PRIVACY_POLICY: 'Datenschutz',
+    CONTACT_US: 'Schreib uns',
+    DONATE_BUTTON: 'Spenden'
 };
 
 export default labels_de;
