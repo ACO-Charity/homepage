@@ -50,9 +50,14 @@ const Header = props => {
                             }
                             {
                                 isScrolling &&
-                                <div className="nav-item" style={{marginLeft: 'auto'}}>
-                                    <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
-                                </div>
+                                    <>
+                                        <div className="nav-item">
+                                            <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>
+                                        </div>
+                                        <div className="nav-item" style={{marginLeft: 'auto'}}>
+                                            <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {labels_de['DONATION']}</button>
+                                        </div>
+                                    </>
                             }
                         </div>
                         <div className="burger-menu d-flex d-md-none position-relative align-items-center">
