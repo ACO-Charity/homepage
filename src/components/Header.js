@@ -36,7 +36,7 @@ const Header = props => {
             <nav>
                 <div className="container">
                     <div className="nav-items">
-                        <div className="d-none d-md-flex">
+                        <div className="d-none d-md-flex flex-grow-1">
                             {
                                 Object.keys(pages).map((page, index) =>
                                     <div className="nav-item" key={index} onClick={() => scrollTo(page)}>
