@@ -25,6 +25,20 @@ const Imprint = props => {
                 <p className="mb-0">{props.label.IMPRINT_TEXT.COURT}</p>
                 <p className="mb-0">{props.label.IMPRINT_TEXT.REG_NUMBER}</p>
             </div>
+
+            <h2 className="mt-5">{props.label.IMPRINT_TEXT.DISCLAIMER}</h2>
+            <div className="mt-4">
+                <h3>{props.label.IMPRINT_TEXT.LIABILITY_CONTENT_TITLE}</h3>
+                <p>{props.label.IMPRINT_TEXT.LIABILITY_CONTENT_TEXT}</p>
+            </div>
+            <div className="mt-3">
+                <h3>{props.label.IMPRINT_TEXT.LIABILITY_LINKS_TITLE}</h3>
+                <p>{props.label.IMPRINT_TEXT.LIABILITY_LINKS_TEXT}</p>
+            </div>
+            <div className="mt-3">
+                <h3>{props.label.IMPRINT_TEXT.COPYRIGHT_TITLE}</h3>
+                <p>{props.label.IMPRINT_TEXT.COPYRIGHT_TEXT}</p>
+            </div>
         </div>
     );
 };
