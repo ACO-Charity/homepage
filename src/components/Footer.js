@@ -31,10 +31,12 @@ const Footer = props => {
 
     const goImprint = () => {
         history.push('imprint')
+        setTimeout( () => {window.scrollTo(0,0)},100)
     };
 
     const goPrivacyPolicy = () => {
         history.push('privacy-policy')
+        setTimeout( () => {window.scrollTo(0,0)},100)
     };
 
     return (
@@ -73,7 +75,7 @@ const Footer = props => {
                     <span className='footer-link' onClick={goImprint}>{props.label.IMPRINT}</span> | <span className='footer-link' onClick={goPrivacyPolicy}>{props.label.PRIVACY_POLICY}</span>
                 </div>
                 <div className="footer-copyright d-flex align-items-center justify-content-center">
-                    <span>2020 © Asia Charity Organization (ACO) e.V.</span>
+                    <span>2020 © ACO Charity e.V.</span>
                 </div>
             </div>
         </footer>
