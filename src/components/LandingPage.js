@@ -1,32 +1,30 @@
 import React from 'react';
 import pages from "../enums/pages";
+import BasicSection from "./common/BasicSection";
 
 const LandingPage = props => {
     return (
         <>
-            <section id={pages.ABOUT_US}>
-                <div className="container jumbotron">
-                    <h1>{props.label[pages.ABOUT_US]}</h1>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.NEWS}>
-                <div className="container jumbotron">
+            <BasicSection sectionId={pages.ABOUT_US}>
+                <h1>{props.label[pages.ABOUT_US]}</h1>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+            </BasicSection>
+            <BasicSection sectionId={pages.NEWS}>
                     <h1>{props.label[pages.NEWS]}</h1>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
@@ -44,10 +42,8 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.PROJECTS}>
-                <div className="container jumbotron">
+            </BasicSection>
+            <BasicSection sectionId={pages.PROJECTS}>
                     <h1>{props.label[pages.PROJECTS]}</h1>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
@@ -65,10 +61,8 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.DONATION}>
-                <div className="container jumbotron">
+            </BasicSection>
+            <BasicSection sectionId={pages.DONATION}>
                     <h1>{props.label[pages.DONATION]}</h1>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
@@ -86,10 +80,8 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.JOIN_US}>
-                <div className="container jumbotron">
+            </BasicSection>
+            <BasicSection sectionId={pages.JOIN_US}>
                     <h1>{props.label[pages.JOIN_US]}</h1>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
@@ -107,8 +99,7 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
+            </BasicSection>
         </>
     );
 };
