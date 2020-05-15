@@ -1,0 +1,51 @@
+section {
+  position: relative;
+  padding-top: 400px;
+
+  .section-image-container {
+    height: 500px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .section-content {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 50px 50px 99px #2222220F;
+
+    .section-title {
+      @include no-select();
+      font-weight: bold;
+      position: relative;
+      height: 7em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .title-text {
+        color: $primary-color;
+        position: relative;
+        z-index: 9;
+        font-weight: 900;
+        font-size: 2.2em;
+      }
+
+      .title-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        font-size: 5em;
+        font-weight: 900;
+        color: rgba($secondary-color, 0.3);
+      }
+
+      & + hr {
+        width: 500px;
+        background-color: rgba($secondary-color, 0.3);
+      }
+    }
+  }
+}

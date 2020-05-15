@@ -85,7 +85,7 @@ const Header = props => {
                                         <div className="nav-item">
                                             <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>
                                         </div>
-                                        <div className="nav-item" style={{marginLeft: 'auto'}}>
+                                        <div className="nav-item" style={{marginLeft: 'auto', marginRight: '0'}}>
                                             <button className="btn btn-icon btn-primary" onClick={onDonationClick}><Icon icon={ic_favorite}/> {props.label.DONATE_BUTTON}</button>
                                         </div>
                                     </>

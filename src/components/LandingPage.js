@@ -1,12 +1,39 @@
 import React from 'react';
 import pages from "../enums/pages";
+import BasicSection from "./common/BasicSection";
+import aboutSectionImage from '../img/section_about.jpg';
+import newsSectionImage from '../img/section_news.jpg';
+import projectsSectionImage from '../img/section_projects.jpg';
+import donateSectionImage from '../img/section_donate.jpg';
+import joinSectionImage from '../img/section_join.jpg';
 
 const LandingPage = props => {
     return (
         <>
-            <section id={pages.ABOUT_US}>
-                <div className="container jumbotron">
-                    <h1>{props.label[pages.ABOUT_US]}</h1>
+            <BasicSection
+                sectionId={pages.ABOUT_US}
+                sectionImage={aboutSectionImage}
+                sectionTitle={props.label[pages.ABOUT_US]}>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+            </BasicSection>
+            <BasicSection sectionId={pages.NEWS}
+                          sectionImage={newsSectionImage}
+                          sectionTitle={props.label[pages.NEWS]}>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>asdkölsakdölsakd</p>
@@ -23,11 +50,10 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.NEWS}>
-                <div className="container jumbotron">
-                    <h1>{props.label[pages.NEWS]}</h1>
+            </BasicSection>
+            <BasicSection sectionId={pages.PROJECTS}
+                          sectionImage={projectsSectionImage}
+                          sectionTitle={props.label[pages.PROJECTS]}>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>asdkölsakdölsakd</p>
@@ -44,11 +70,10 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.PROJECTS}>
-                <div className="container jumbotron">
-                    <h1>{props.label[pages.PROJECTS]}</h1>
+            </BasicSection>
+            <BasicSection sectionId={pages.DONATION}
+                          sectionImage={donateSectionImage}
+                          sectionTitle={props.label[pages.DONATION]}>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>asdkölsakdölsakd</p>
@@ -65,11 +90,10 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.DONATION}>
-                <div className="container jumbotron">
-                    <h1>{props.label[pages.DONATION]}</h1>
+            </BasicSection>
+            <BasicSection sectionId={pages.JOIN_US}
+                          sectionImage={joinSectionImage}
+                          sectionTitle={props.label[pages.JOIN_US]}>
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>asdkölsakdölsakd</p>
@@ -86,29 +110,7 @@ const LandingPage = props => {
                     <p> aksöldksaldsaöld</p>
                     <p>asdkölsakdölsakd</p>
                     <p>sadölsak</p>
-                </div>
-            </section>
-            <section id={pages.JOIN_US}>
-                <div className="container jumbotron">
-                    <h1>{props.label[pages.JOIN_US]}</h1>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                </div>
-            </section>
+            </BasicSection>
         </>
     );
 };
