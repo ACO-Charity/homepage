@@ -19,9 +19,9 @@ const Folding = props => {
             </div>
             {
                 isOpen &&
-                    <>
+                    <div className="folding-content">
                         {props.children}
-                    </>
+                    </div>
             }
         </div>
     );
