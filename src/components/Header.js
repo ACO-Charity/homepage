@@ -99,22 +99,27 @@ const Header = props => {
                                 </div>
                             }
                             <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
-                            <div className="nav-item" onClick={toggleMobileNav}>
-                                <Icon size={30} icon={ic_menu}/>
-                            </div>
+                            {
+                                isLandingPage() ?
+                                    <div className={"nav-item " + (showMobileNav ? 'active' : '')} onClick={toggleMobileNav}>
+                                        <Icon size={30} icon={ic_menu}/>
+                                    </div>
+                                    :
+                                    <div className="nav-item d-flex align-items-center" onClick={goLandingPage}>
+                                        <Icon size={26} icon={ic_keyboard_backspace}/><span className="ml-2">{props.label.BACK}</span>
+                                    </div>
+                            }
                         </div>
                     </div>
                 </div>
             </nav>
-            {showMobileNav &&
+            {showMobileNav && isLandingPage() &&
             <div id="mobile-nav" className="d-md-none">
                 {
-                    isLandingPage() &&
                     Object.keys(pages).map((page, index) =>
-                        <div className="mobile-nav-item" key={index} onClick={() => mobileNavScrollTo(page)}>
-                            {props.label[page]}
-                        </div>
-                    )
+                    <div className="mobile-nav-item" key={index} onClick={() => mobileNavScrollTo(page)}>
+                        {props.label[page]}
+                    </div>)
                 }
             </div>
             }

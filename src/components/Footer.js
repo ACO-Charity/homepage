@@ -47,7 +47,7 @@ const Footer = props => {
                         <img id="footer-logo" src={whiteLogo} alt="LOGO"/>
                     </div>
                     <div className="contact-us col-9">
-                        <h1 className="font-weight-bold">aölkdalödkölsaköölsa</h1>
+                        <h1 className="font-weight-bold">aölkdalöd kölsaköölsa</h1>
                         <p>saldsad äöldasad säd la ösald</p>
                     </div>
                 </div>
