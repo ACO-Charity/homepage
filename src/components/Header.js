@@ -92,6 +92,12 @@ const Header = props => {
                             }
                         </div>
                         <div className={"burger-menu d-flex d-md-none position-relative align-items-center " + (isScrolling ? '' : 'justify-content-end')}>
+                            {
+                                isScrolling &&
+                                <div className="nav-item">
+                                    <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>
+                                </div>
+                            }
                             <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
                             <div className="nav-item" onClick={toggleMobileNav}>
                                 <Icon size={30} icon={ic_menu}/>
