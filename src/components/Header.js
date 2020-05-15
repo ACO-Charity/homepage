@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import pages from '../enums/pages';
 import icon from '../img/Aco_Logo_Weiss.svg';
 import {Icon} from 'react-icons-kit';
@@ -11,11 +11,17 @@ import { useLocation, useHistory } from 'react-router-dom'
 
 const Header = props => {
 
+    const [showMobileNav, setShowMobileNav] = useState(false);
+
     const isScrolling = props.scrollPosY > 40;
     const location = useLocation();
     const history = useHistory();
 
     const headerStyleClass = isScrolling ? 'scrolling' : '';
+
+    const toggleMobileNav = () => {
+        setShowMobileNav(!showMobileNav);
+    }
 
     const onDonationClick = () => {
         window.open(links.PAYPAL_DONATION_LINK, '_blank');
@@ -31,6 +37,11 @@ const Header = props => {
 
     const goLandingPage = () => {
         history.push("/");
+    }
+
+    const mobileNavScrollTo = (page) => {
+        setShowMobileNav(false);
+        scrollTo(page)
     }
 
     return (
@@ -80,15 +91,33 @@ const Header = props => {
                                     </>
                             }
                         </div>
-                        <div className="burger-menu d-flex d-md-none position-relative align-items-center">
+                        <div className={"burger-menu d-flex d-md-none position-relative align-items-center " + (isScrolling ? '' : 'justify-content-end')}>
+                            {
+                                isScrolling &&
+                                <div className="nav-item">
+                                    <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>
+                                </div>
+                            }
                             <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
-                            <div className="nav-item">
+                            <div className="nav-item" onClick={toggleMobileNav}>
                                 <Icon size={30} icon={ic_menu}/>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
+            {showMobileNav &&
+            <div id="mobile-nav" className="d-md-none">
+                {
+                    isLandingPage() &&
+                    Object.keys(pages).map((page, index) =>
+                        <div className="mobile-nav-item" key={index} onClick={() => mobileNavScrollTo(page)}>
+                            {props.label[page]}
+                        </div>
+                    )
+                }
+            </div>
+            }
         </header>
     );
 };
