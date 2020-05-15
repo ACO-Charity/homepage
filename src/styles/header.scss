@@ -72,6 +72,16 @@ header {
       }
 
     }
+
+    #mobile-nav {
+      background: $primary-color;
+
+      .mobile-nav-item {
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
   }
 
 
@@ -146,11 +156,11 @@ header {
   }
 
   #mobile-nav {
+    background: $secondary-color;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-right: 1em;
     text-align: right;
-    animation: fadeMobileNavIn 0.5s forwards;
 
     @for $i from 1 through 10 {
       .mobile-nav-item:nth-child(#{$i}n) {
@@ -164,20 +174,9 @@ header {
       margin-right: -200px;
 
       &:hover {
-        color: $secondary-color;
+        color: $primary-color;
       }
     }
-  }
-
-  @keyframes fadeMobileNavIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-
   }
 
   @keyframes fadeMobileNavItemIn {
