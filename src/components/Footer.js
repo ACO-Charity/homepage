@@ -31,10 +31,12 @@ const Footer = props => {
 
     const goImprint = () => {
         history.push('imprint')
+        setTimeout( () => {window.scrollTo(0,0)},100)
     };
 
     const goPrivacyPolicy = () => {
         history.push('privacy-policy')
+        setTimeout( () => {window.scrollTo(0,0)},100)
     };
 
     return (
