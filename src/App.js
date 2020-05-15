@@ -21,6 +21,7 @@ function App() {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, {passive: true});
+        setScrollPosY(window.pageYOffset);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
