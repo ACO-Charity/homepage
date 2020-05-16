@@ -1,11 +1,16 @@
 @import "fonts";
 @import "colors";
 @import "index";
-@import "app";
-@import "header";
-@import "footer";
-@import "languageSelector";
-@import "folding";
-@import "imprint";
-@import "privacy";
-@import "sections";
+
+.aco-web {
+  overflow-x: hidden;
+
+  @import "app";
+  @import "header";
+  @import "footer";
+  @import "languageSelector";
+  @import "folding";
+  @import "imprint";
+  @import "privacy";
+  @import "sections";
+}
