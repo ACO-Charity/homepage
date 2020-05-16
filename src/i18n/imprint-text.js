@@ -16,7 +16,7 @@ const imprintText = {
             'Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. ' +
             'Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.',
 
-        LIABILITY_LINKS_TITLE:'Haftung für Inhalte',
+        LIABILITY_LINKS_TITLE:'Haftung für Links',
         LIABILITY_LINKS_TEXT:'Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. ' +
             'Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. ' +
             'Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. ' +
@@ -51,7 +51,7 @@ const imprintText = {
             'However, liability in this respect is only possible from the time of knowledge of a concrete infringement. ' +
             'If we become aware of any such legal infringements, we will remove the content in question immediately.',
 
-        LIABILITY_LINKS_TITLE:'Liability for contents',
+        LIABILITY_LINKS_TITLE:'Liability for links',
         LIABILITY_LINKS_TEXT:'Our offer contains links to external websites of third parties, on whose contents we have no influence. ' +
             'Therefore we cannot assume any liability for these external contents. ' +
             'The respective provider or operator of the sites is always responsible for the contents of the linked sites. ' +
