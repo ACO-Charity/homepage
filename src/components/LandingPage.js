@@ -6,6 +6,7 @@ import newsSectionImage from '../img/section_news.jpg';
 import projectsSectionImage from '../img/section_projects.jpg';
 import donateSectionImage from '../img/section_donate.jpg';
 import joinSectionImage from '../img/section_join.jpg';
+import ACOFacts from "./ACOFacts";
 
 const LandingPage = props => {
     return (
@@ -31,6 +32,7 @@ const LandingPage = props => {
                 <p>asdkölsakdölsakd</p>
                 <p>sadölsak</p>
             </BasicSection>
+            <ACOFacts label={props.label} />
             <BasicSection sectionId={pages.NEWS}
                           sectionImage={newsSectionImage}
                           sectionTitle={props.label[pages.NEWS]}>

@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import languages from "./enums/languages";
 import labels_en from "./i18n/en";
 import LandingPage from "./components/LandingPage";
-import {Switch, Route, Redirect} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 import Imprint from "./components/Imprint";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 

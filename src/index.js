@@ -15,7 +15,6 @@ if (matcher.matches) {
 } else {
     darkFavicon.remove();
 }
-console.log('matcher', matcher);
 
 ReactDOM.render(
     <React.StrictMode>
