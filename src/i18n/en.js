@@ -21,7 +21,14 @@ const labels_en = {
 
     /*TEXT*/
     IMPRINT_TEXT: imprintText.EN,
-    PRIVACY_TEXT: privacyText.EN
+    PRIVACY_TEXT: privacyText.EN,
+
+    MEMBERS: 'members',
+    EVENTS: 'events',
+    DONATED: 'donated',
+    ACO_IN_NUMBERS: 'ACO in numbers',
+
+
 
 };
 

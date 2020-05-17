@@ -21,7 +21,12 @@ const labels_de = {
 
     /*TEXT*/
     IMPRINT_TEXT: imprintText.DE,
-    PRIVACY_TEXT: privacyText.DE
+    PRIVACY_TEXT: privacyText.DE,
+
+    MEMBERS: 'Mitglieder',
+    EVENTS: 'Veranstaltungen',
+    DONATED: 'gespendet',
+    ACO_IN_NUMBERS: 'ACO in Zahlen',
 
 };
 
