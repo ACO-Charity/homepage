@@ -26,6 +26,8 @@ const labels_en = {
     MEMBERS: 'members',
     EVENTS: 'events',
     DONATED: 'donated',
+    ACO_IN_NUMBERS: 'ACO in numbers',
+
 
 
 };

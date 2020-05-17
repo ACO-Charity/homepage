@@ -26,6 +26,7 @@ const labels_de = {
     MEMBERS: 'Mitglieder',
     EVENTS: 'Veranstaltungen',
     DONATED: 'gespendet',
+    ACO_IN_NUMBERS: 'ACO in Zahlen',
 
 };
 

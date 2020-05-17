@@ -9,7 +9,7 @@ const BasicSection = props => {
                     <div className="section-image-container" style={{backgroundImage: 'url(' + props.sectionImage +')'}}>
                     </div>
             }
-                <Fade bottom>
+                <Fade clear>
                     <div className="section-content container jumbotron">
                         <div className="section-title">
                             <h2 className="title-shadow text-center">{props.sectionTitle}</h2>
