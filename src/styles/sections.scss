@@ -1,6 +1,6 @@
 section {
   position: relative;
-  padding-top: 400px;
+  padding-top: 370px;
 
   .section-image-container {
     height: 500px;
@@ -44,6 +44,7 @@ section {
 
       & + hr {
         width: 500px;
+        max-width: 80%;
         background-color: rgba($secondary-color, 0.3);
       }
     }
