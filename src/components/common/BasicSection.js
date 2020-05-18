@@ -1,14 +1,29 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import VisibilitySensor from "react-visibility-sensor";
 
 const BasicSection = props => {
+
+    const revealed = (sensorData) => {
+        if (sensorData) {
+            props.setCurrentSection(props.sectionId);
+        }
+    };
+
     return (
-        <section id={props.sectionId}>
-            {
-                props.sectionImage &&
-                    <div className="section-image-container" style={{backgroundImage: 'url(' + props.sectionImage +')'}}>
+        <VisibilitySensor onChange={revealed}
+                          partialVisibility={true}
+                          offset={{
+                              top: 500,
+                              bottom: 500
+                          }}
+                          minTopValue={200}>
+            <section id={props.sectionId}>
+                {
+                    props.sectionImage &&
+                    <div className="section-image-container" style={{backgroundImage: 'url(' + props.sectionImage + ')'}}>
                     </div>
-            }
+                }
                 <Fade clear>
                     <div className="section-content container jumbotron">
                         <div className="section-title">
@@ -19,7 +34,8 @@ const BasicSection = props => {
                         {props.children}
                     </div>
                 </Fade>
-        </section>
+            </section>
+        </VisibilitySensor>
     );
 };
 

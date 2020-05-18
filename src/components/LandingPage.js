@@ -12,6 +12,7 @@ const LandingPage = props => {
     return (
         <>
             <BasicSection
+                setCurrentSection={props.setCurrentSection}
                 sectionId={pages.ABOUT_US}
                 sectionImage={aboutSectionImage}
                 sectionTitle={props.label[pages.ABOUT_US]}>
@@ -32,90 +33,93 @@ const LandingPage = props => {
                 <p>asdkölsakdölsakd</p>
                 <p>sadölsak</p>
             </BasicSection>
-            <ACOFacts label={props.label} />
+            <ACOFacts label={props.label}/>
             <BasicSection sectionId={pages.NEWS}
+                          setCurrentSection={props.setCurrentSection}
                           sectionImage={newsSectionImage}
                           sectionTitle={props.label[pages.NEWS]}>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
             </BasicSection>
             <BasicSection sectionId={pages.PROJECTS}
+                          setCurrentSection={props.setCurrentSection}
                           sectionImage={projectsSectionImage}
                           sectionTitle={props.label[pages.PROJECTS]}>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
             </BasicSection>
             <BasicSection sectionId={pages.DONATION}
+                          setCurrentSection={props.setCurrentSection}
                           sectionImage={donateSectionImage}
                           sectionTitle={props.label[pages.DONATION]}>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
             </BasicSection>
             <BasicSection sectionId={pages.JOIN_US}
+                          setCurrentSection={props.setCurrentSection}
                           sectionImage={joinSectionImage}
                           sectionTitle={props.label[pages.JOIN_US]}>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
-                    <p> aksöldksaldsaöld</p>
-                    <p>asdkölsakdölsakd</p>
-                    <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
+                <p> aksöldksaldsaöld</p>
+                <p>asdkölsakdölsakd</p>
+                <p>sadölsak</p>
             </BasicSection>
         </>
     );
 };
-
 
 export default LandingPage;

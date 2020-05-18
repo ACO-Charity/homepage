@@ -13,7 +13,8 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 function App() {
 
     const [scrollPosY, setScrollPosY] = useState(0);
-    const [selectedLanguage,setSelectedLanguage] = useState(languages.DE);
+    const [selectedLanguage, setSelectedLanguage] = useState(languages.DE);
+    const [currentSection, setCurrentSection] = useState('');
 
     const handleScroll = (event) => {
         setScrollPosY(window.pageYOffset);
@@ -35,21 +36,25 @@ function App() {
             case languages.EN:
                 return labels_en;
         }
-    }
+    };
 
     return (
         <div className="aco-web">
-            <Header scrollPosY={scrollPosY} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} label={label()}/>
+            <Header currentSection={currentSection}
+                    scrollPosY={scrollPosY}
+                    selectedLanguage={selectedLanguage}
+                    setSelectedLanguage={setSelectedLanguage}
+                    label={label()}/>
             <div className="content">
                 <Switch>
                     <Route path="/imprint">
-                        <Imprint label={label()} />
+                        <Imprint label={label()}/>
                     </Route>
                     <Route path="/privacy-policy">
-                        <PrivacyPolicy label={label()} />
+                        <PrivacyPolicy label={label()}/>
                     </Route>
                     <Route path="/">
-                        <LandingPage label={label()} />
+                        <LandingPage setCurrentSection={setCurrentSection} label={label()}/>
                     </Route>
                 </Switch>
             </div>
