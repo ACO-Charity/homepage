@@ -26,12 +26,12 @@ const ACOFacts = props => {
                 <div className="container">
                     <hr/>
                     <h2 className="aco-facts-title">{props.label.ACO_IN_NUMBERS}</h2>
+                    {
+                        memberCount &&
                     <div className="row pt-5">
                         <div className="col-12 col-md-3">
-                            {
-                                memberCount &&
+
                                 <FactsNumber num={memberCount} text={props.label.MEMBERS}/>
-                            }
                         </div>
                         <div className="col-12 col-md-3">
                             <FactsNumber num={14} text={props.label.EVENTS}/>
@@ -43,9 +43,9 @@ const ACOFacts = props => {
                             <FactsNumber num={59990} text={props.label.DONATED} unit={'€'}/>
                         </div>
                     </div>
+                    }
 
                     <hr/>
-                    bla bla bla bla bla bla bla blabla bla bla blabla bla bla bla
                 </div>
             </div>
             }
