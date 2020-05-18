@@ -3,10 +3,6 @@ import {Spring} from "react-spring/renderprops";
 
 const FactsNumber = props => {
 
-    const renderUnit = () => {
-        return props.unit || '';
-    };
-
     return (
         <div className="fact-num">
             <Spring
@@ -15,7 +11,7 @@ const FactsNumber = props => {
                 unit={props.unit}
                 from={{number: 0}}
                 to={{number: props.num}}>
-                {props => <p className="fact-num-val">{Math.floor(props.number)} {renderUnit()}</p>}
+                {springProps => <p className="fact-num-val">{Math.floor(springProps.number)} {props.unit}</p>}
             </Spring>
             <p className="fact-num-text">{props.text}</p>
         </div>
