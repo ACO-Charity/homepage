@@ -7,15 +7,21 @@ import Fade from 'react-reveal/Fade';
 const ACOFacts = props => {
 
     const [memberCount, setMemberCount] = useState(null);
+    const [revealed, setRevealed] = useState(false);
 
-    useEffect(()=> {
-        ACOService.getMembercount().then( res => {
+    useEffect(() => {
+        ACOService.getMembercount().then(res => {
             setMemberCount(res.data);
-        })
-    }, [])
+        });
+    }, []);
+
+    const onRevealed = () => {
+        setRevealed(true);
+    };
 
     return (
-        <Fade>
+        <Fade onReveal={onRevealed}>
+            {revealed &&
             <div id="aco-facts" className="aco-facts">
                 <div className="container">
                     <hr/>
@@ -42,6 +48,7 @@ const ACOFacts = props => {
                     bla bla bla bla bla bla bla blabla bla bla blabla bla bla bla
                 </div>
             </div>
+            }
         </Fade>
     );
 };
