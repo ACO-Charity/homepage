@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import pages from '../enums/pages';
 import icon from '../img/Aco_Logo_Weiss.svg';
 import {Icon} from 'react-icons-kit';
@@ -12,12 +12,20 @@ import {useLocation, useHistory} from 'react-router-dom';
 const Header = props => {
 
     const [showMobileNav, setShowMobileNav] = useState(false);
+    const [inited, setInited] = useState(false);
 
     const isScrolling = props.scrollPosY > 40;
     const location = useLocation();
     const history = useHistory();
 
     const headerStyleClass = isScrolling ? 'scrolling' : '';
+
+    useEffect(() => {
+        return () => {
+            console.log('isScrolling', isScrolling);
+            setInited(true);
+        };
+    }, [isScrolling]);
 
     const toggleMobileNav = () => {
         setShowMobileNav(!showMobileNav);
@@ -46,7 +54,7 @@ const Header = props => {
 
     return (
         <header className={headerStyleClass}>
-            <div className="top-nav">
+            <div className={"top-nav" + (inited ? ' inited' : '')}>
                 <div className="container">
                     <div className="d-flex justify-content-center align-items-center">
                         <img id="nav-logo" className="mr-5" src={icon} alt="LOGO"/>

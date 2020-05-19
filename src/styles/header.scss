@@ -35,7 +35,7 @@ header {
   &.scrolling {
     .top-nav {
       height: 0;
-      animation: slide-in 0.5s forwards;
+      animation: slide-in 0.5s forwards !important;
       overflow: hidden;
     }
 
@@ -90,7 +90,10 @@ header {
     height: 90px;
     display: flex;
     align-items: center;
-    animation: slide-out 1s forwards;
+
+    &.inited {
+      animation: slide-out 1s forwards;
+    }
 
     .container {
       display: flex;
