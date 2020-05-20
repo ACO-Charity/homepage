@@ -28,7 +28,7 @@ const labels_en = {
     DONATED: 'donated',
     ACO_IN_NUMBERS: 'ACO in numbers',
 
-    ABOUT_SECTION_TEXT: 'ACO is a non-profit association of socially committed young adults. ' +
+    ABOUT_SECTION_TEXT: 'ACO Charity is a non-profit association of socially committed young adults. ' +
         'Since 2010, we have been committed to helping socially disadvantaged children and young people, particularly in Vietnam and Germany. ' +
         'The goals of our association are the development of sustainable educational projects, ' +
         'the integration of migrants through intercultural exchange and the youth promotion of our own members.'

@@ -28,7 +28,7 @@ const labels_de = {
     DONATED: 'gespendet',
     ACO_IN_NUMBERS: 'ACO in Zahlen',
 
-    ABOUT_SECTION_TEXT: 'ACO ist ein gemeinnütziger Verein aus sozial engagierten, jungen Erwachsenen. ' +
+    ABOUT_SECTION_TEXT: 'ACO Charity ist ein gemeinnütziger Verein aus sozial engagierten, jungen Erwachsenen. ' +
         'Seit 2010 setzen wir uns für sozial benachteiligte Kinder und Jugendliche insbesondere in Vietnam und Deutschland ein. ' +
         'Ziele unseres Vereines sind die Entwicklung von nachhaltigen Bildungsprojekten, ' +
         'die Integration von MigrantInnen durch interkulturellen Austausch und die Jugendförderung unserer eigenen Mitglieder.'
