@@ -7,32 +7,15 @@ import projectsSectionImage from '../img/section_projects.jpg';
 import donateSectionImage from '../img/section_donate.jpg';
 import joinSectionImage from '../img/section_join.jpg';
 import ACOFacts from "./ACOFacts";
+import AboutUs from './sections/AboutUs';
 
 const LandingPage = props => {
     return (
         <>
-            <BasicSection
+            <AboutUs
                 setCurrentSection={props.setCurrentSection}
-                sectionId={pages.ABOUT_US}
-                sectionImage={aboutSectionImage}
-                sectionTitle={props.label[pages.ABOUT_US]}>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-            </BasicSection>
+                label={props.label}
+            />
             <ACOFacts label={props.label}/>
             <BasicSection sectionId={pages.NEWS}
                           setCurrentSection={props.setCurrentSection}
