@@ -3,7 +3,7 @@ const links = {
     CONTACT_MAIL: 'vorstand@aco.charity',
     CONTACT_MAIL_SECONDARY: 'kontakt@aco.charity',
     INSTAGRAM: 'https://www.instagram.com/acocharity/',
-    FACEBOOK: 'https://www.facebook.com/asia.charity.organization',
+    FACEBOOK: 'https://www.facebook.com/acocharityev',
     YOUTUBE: 'https://www.youtube.com/user/ACOVerein'
 };
 
