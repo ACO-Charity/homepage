@@ -43,35 +43,31 @@ const Footer = props => {
         <footer>
             <div className="container">
                 <div className="row">
-                    <div className="col-3 align-items-center justify-content-center">
-                        <div className="row justify-content-center">
-                            <img id="footer-logo" src={whiteLogo} alt="LOGO"/>
+                    <div className="col-3 d-flex align-items-center justify-content-center">
+                        <img id="footer-logo" src={whiteLogo} alt="LOGO"/>
+                    </div>
+                    <div className="contact-us col-9 d-flex flex-column justify-content-start">
+                        <h1 className="font-weight-bold">aölkdalöd kölsaköölsa</h1>
+                        <p>saldsad äöldasad säd la ösald</p>
+                    </div>
+                </div>
+                <div className="row footer-second-line">
+                    <div className="socialmedia col-3 d-flex justify-content-around">
+                        <div className="sm-item" onClick={openInsta}>
+                            <Icon size={40} icon={instagram}/>
                         </div>
-                        <div className="row justify-content-center">
-                            <div className="socialmedia d-flex">
-                                <div className="sm-item" onClick={openInsta}>
-                                    <Icon size={40} icon={instagram}/>
-                                </div>
-                                <div className="sm-item" onClick={openFacebook}>
-                                    <Icon size={40} icon={facebookOfficial}/>
-                                </div>
-                                <div className="sm-item" onClick={openYoutube}>
-                                    <Icon size={44} icon={youtubePlay}/>
-                                </div>
-                            </div>
+                        <div className="sm-item" onClick={openFacebook}>
+                            <Icon size={40} icon={facebookOfficial}/>
+                        </div>
+                        <div className="sm-item" onClick={openYoutube}>
+                            <Icon size={44} icon={youtubePlay}/>
                         </div>
                     </div>
-                    <div className="col-9">
-                        <div className="contact-us">
-                            <h1 className="font-weight-bold">aölkdalöd kölsaköölsa</h1>
-                            <p>saldsad äöldasad säd la ösald</p>
-                        </div>
-                        <div className="cta-contact">
-                            <button className="btn btn-primary btn-icon" onClick={mailToUs}>
-                                <Icon size={28} icon={ic_mail}/>
-                                {props.label.CONTACT_US}
-                            </button>
-                        </div>
+                    <div className="cta-contact col-9">
+                        <button className="btn btn-primary btn-icon" onClick={mailToUs}>
+                            <Icon size={28} icon={ic_mail}/>
+                            {props.label.CONTACT_US}
+                        </button>
                     </div>
                 </div>
                 <hr/>
