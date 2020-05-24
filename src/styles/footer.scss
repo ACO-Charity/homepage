@@ -9,14 +9,19 @@ footer {
   }
 
   .contact-us {
+
+    h1{
+      font-size: 30px;
+      margin-bottom: 0;
+    }
     p {
       font-weight: normal;
-      font-size: 26px;
+      font-size: 25px;
     }
   }
 
   #footer-logo {
-    max-width: 100%;
+    max-width: 200px;
   }
 
   .footer-links {
@@ -36,6 +41,8 @@ footer {
   }
 
   .socialmedia {
+    width: 100%;
+    justify-content: space-evenly;
     .sm-item {
       display: flex;
       align-items: center;
