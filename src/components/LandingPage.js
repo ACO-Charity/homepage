@@ -1,7 +1,6 @@
 import React from 'react';
 import pages from "../enums/pages";
 import BasicSection from "./common/BasicSection";
-import aboutSectionImage from '../img/section_about.jpg';
 import newsSectionImage from '../img/section_news.jpg';
 import projectsSectionImage from '../img/section_projects.jpg';
 import donateSectionImage from '../img/section_donate.jpg';
