@@ -1,14 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React, {lazy, Suspense, useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Header from './components/Header';
 import labels_de from './i18n/de';
-import Footer from './components/Footer';
 import languages from "./enums/languages";
 import labels_en from "./i18n/en";
-import LandingPage from "./components/LandingPage";
 import {Switch, Route} from "react-router-dom";
-import Imprint from "./components/Imprint";
-import PrivacyPolicy from "./components/PrivacyPolicy";
+
+const Header = lazy(() => import('./components/Header'));
+const Imprint = lazy(() => import('./components/Imprint'));
+const LandingPage = lazy(() => import('./components/LandingPage'));
+const Footer = lazy(() => import('./components/Footer'));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
 
 function App() {
 
@@ -38,27 +39,39 @@ function App() {
         }
     };
 
+    const loading = <div className="lazy-loading" />
+
     return (
         <div className="aco-web">
-            <Header currentSection={currentSection}
-                    scrollPosY={scrollPosY}
-                    selectedLanguage={selectedLanguage}
-                    setSelectedLanguage={setSelectedLanguage}
-                    label={label()}/>
+            <Suspense fallback={loading}>
+                <Header currentSection={currentSection}
+                        scrollPosY={scrollPosY}
+                        selectedLanguage={selectedLanguage}
+                        setSelectedLanguage={setSelectedLanguage}
+                        label={label()}/>
+            </Suspense>
             <div className="content">
                 <Switch>
                     <Route path="/imprint">
-                        <Imprint label={label()}/>
+                        <Suspense fallback={loading}>
+                            <Imprint label={label()}/>
+                        </Suspense>
                     </Route>
                     <Route path="/privacy-policy">
-                        <PrivacyPolicy label={label()}/>
+                        <Suspense fallback={loading}>
+                            <PrivacyPolicy label={label()}/>
+                        </Suspense>
                     </Route>
                     <Route path="/">
-                        <LandingPage setCurrentSection={setCurrentSection} label={label()}/>
+                        <Suspense fallback={loading}>
+                            <LandingPage setCurrentSection={setCurrentSection} label={label()}/>
+                        </Suspense>
                     </Route>
                 </Switch>
             </div>
-            <Footer selectedLanguage={selectedLanguage} label={label()}/>
+            <Suspense fallback={loading}>
+                <Footer selectedLanguage={selectedLanguage} label={label()}/>
+            </Suspense>
         </div>
     );
 }
