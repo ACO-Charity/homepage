@@ -24,9 +24,7 @@ const LanguageSelector = props => {
                 <div className="language-items">
                 {
                     Object.keys(languages).map((lang, index) => {
-                        if (lang !== props.selectedLanguage) {
-                            return <div className="language-item" key={index} onClick={() => selectLanguage(lang)}>{lang}</div>
-                        }
+                        return lang !== props.selectedLanguage && <div className="language-item" key={index} onClick={() => selectLanguage(lang)}>{lang}</div>
                     })
                 }
                 </div>
@@ -34,6 +32,5 @@ const LanguageSelector = props => {
         </div>
     );
 };
-
 
 export default LanguageSelector;

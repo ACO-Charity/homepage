@@ -35,6 +35,8 @@ function App() {
                 return labels_de;
             case languages.EN:
                 return labels_en;
+            default:
+                return languages.DE;
         }
     };
 
