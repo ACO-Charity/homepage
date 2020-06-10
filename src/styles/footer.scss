@@ -8,7 +8,7 @@ footer {
     border-color: rgba(255, 255, 255, 0.4);
   }
 
-  .footer-second-line{
+  .footer-second-line {
     margin-top: 20px;
   }
 
@@ -16,10 +16,11 @@ footer {
 
     margin-top: 6px;
 
-    h1{
+    h1 {
       font-size: 30px;
       margin-bottom: 0;
     }
+
     p {
       font-weight: normal;
       font-size: 25px;
@@ -49,6 +50,7 @@ footer {
   .socialmedia {
     width: 100%;
     justify-content: space-evenly;
+
     .sm-item {
       display: flex;
       align-items: center;
