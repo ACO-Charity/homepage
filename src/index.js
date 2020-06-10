@@ -1,29 +1,29 @@
+import App from './App';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './styles/fonts.scss';
 import './styles/styles.scss';
-import App from './App';
+import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 let lightFavicon = document.querySelector('link#light-theme-icon');
 let darkFavicon = document.querySelector('link#dark-theme-icon');
 
 const matcher = window.matchMedia('(prefers-color-scheme: dark)');
 if (matcher.matches) {
-    lightFavicon.remove();
-    document.head.append(darkFavicon);
+  lightFavicon.remove();
+  document.head.append(darkFavicon);
 } else {
-    darkFavicon.remove();
+  darkFavicon.remove();
 }
 
 ReactDOM.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById('root')
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
