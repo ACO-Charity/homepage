@@ -34,7 +34,31 @@ const labels_en = {
     ABOUT_SECTION_TEXT_3: 'Together we want to promote sustainable educational projects as well as integration, intercultural exchange and youth development.',
     ABOUT_SECTION_TEXT_CORE_1: 'Our vision: "More educational justice for children in need".',
     ABOUT_SECTION_TEXT_CORE_2: 'Our mission: "The promotion of cultural exchange',
-    ABOUT_SECTION_TEXT_CORE_3: 'Our motto: "A good deed. Many grateful hearts."'
+    ABOUT_SECTION_TEXT_CORE_3: 'Our motto: "A good deed. Many grateful hearts."',
+
+    PROJECT_SECTION_TEXT: 'Through regular fundraising projects of all kinds and sizes, we collect donations for our aid projects. ' +
+        'However, the generation of donations is not the only goal of our event. With our events we want to promote the cultural exchange in Germany. ' +
+        'At the same time our partly very young members should acquire numerous project management and soft skills and benefit and learn from the know-how of the older members.',
+
+    PROJECT_BIEN_HOA_TITLE: 'Bien Hoa',
+    PROJECT_BIEN_HOA_TEXT_1: 'The Children\'s Center in Bien Hoa helps children and young people without a home or from poor families to receive a quality school education. ' +
+        'At the moment a total of 70 children are being cared for.',
+    PROJECT_BIEN_HOA_TEXT_2: 'We cover school fees as well as the costs for teaching materials and uniform and ' +
+        'accompany the school career so that each child achieves a qualified school-leaving certificate and can build ' +
+        'a future on their own. Outside of school lessons, we organize joint leisure or sports activities to strengthen team spirit and motivation.',
+
+    PROJECT_HLT_TITLE: 'Hoc Lam Tho',
+    PROJECT_HLT_TEXT_1: 'The non-profit association "Ngàn Hạc Giấy" (literally translated: 1000 paper cranes) started the initiative "Future through education" in 2007. ' +
+        'The aim of this project was to give young people from Lao Cai, Ha Giang the chance of an apprenticeship. ' +
+        'Together with "Ngàn Hạc Giấy", we participate in scholarships that offer young people a perspective.',
+
+    PROJECT_VS_TITLE: 'Vielfalt Stärkt',
+    PROJECT_VS_QOUTE: '“Fremd ist der Fremde nur in der Fremde” - Karl Valentin',
+    PROJECT_VS_TEXT_1: 'Flight, asylum, integration - these issues have polarized German society more than any other in recent years. ' +
+        'When a large number of refugees found their way to Germany in 2015, one thing was clear: This is not a temporary but a long-term issue that we want to address!',
+    PROJECT_VS_TEXT_2: 'This was the birth of our "Vielfalt stärkt" project. With "Vielfalt stärken" (Strengthening Diversity) ' +
+        'we want to support refugees in their integration in Germany and promote cultural exchange. ' +
+        'The majority of our members are also personally familiar (through their parents) with migration experiences and the difficulties they face upon arrival (boat people, guest workers, etc.)'
 
 };
 

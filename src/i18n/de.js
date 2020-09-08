@@ -35,7 +35,33 @@ const labels_de = {
     ABOUT_SECTION_TEXT_3: 'Gemeinsam möchten wir nachhaltige Bildungsprojekte sowie die Integration, den interkulturellen Austausch und die Jugendförderung vorantreiben.',
     ABOUT_SECTION_TEXT_CORE_1: 'Unsere Vision: „Mehr Bildungsgerechtigkeit für hilfsbedürftige Kinder“',
     ABOUT_SECTION_TEXT_CORE_2: 'Unsere Mission: „Die Förderung des kulturellen Austausch“',
-    ABOUT_SECTION_TEXT_CORE_3: 'Unser Motto: „Eine gute Tat. Viele dankbare Herzen.“'
+    ABOUT_SECTION_TEXT_CORE_3: 'Unser Motto: „Eine gute Tat. Viele dankbare Herzen.“',
+
+    PROJECT_SECTION_TEXT: 'Durch regelmäßige Fundraising-Projekte jeglicher Art und Größe, sammeln wir Spendengelder für unsere Hilfsprojekte. ' +
+        'Allerdings ist die Generierung von Spendengelder nicht das einzige Ziel unserer Veranstaltung. ' +
+        'Mit unseren Events möchten wir den kulturellen Austausch in Deutschland fördern. ' +
+        'Gleichzeitig sollen unsere teilweise sehr jungen Mitglieder zahlreiche Projektmanagement- und ' +
+        'Soft-Skills erwerben und vom Know-How der älteren Mitglieder profitieren und lernen.',
+
+    PROJECT_BIEN_HOA_TITLE: 'Bien Hoa',
+    PROJECT_BIEN_HOA_TEXT_1: 'Das Kinderzentrum in Bien Hoa hilft Kinder und Jugendliche ohne Zuhause oder aus armen Familien, ' +
+        'eine qualitative Schulausbildung zu erhalten. Momentan werden insgesamt 70 Kinder fürsorglich betreut.',
+    PROJECT_BIEN_HOA_TEXT_2: 'Wir übernehmen Schulgebühren sowie die Kosten für Lehrmaterial und Uniform und begleiten die schulische Laufbahn, ' +
+        'sodass jedes Kind einen qualifizierten Schulabschluss erreicht und selbstbestimmt eine Zukunft aufbauen kann. ' +
+        'Außerhalb des Schulunterrichts organisieren wir gemeinsame Freizeit- oder Sportaktivitäten, um Teamgeist sowie Motivation zu stärken.',
+
+    PROJECT_HLT_TITLE: 'Hoc Lam Tho',
+    PROJECT_HLT_TEXT_1: 'Der gemeinnützige Verein „Ngàn Hạc Giấy“ (wörtlich übersetzt: 1000 Papierkraniche) startete im Jahr 2007 die Initiative „Zukunft durch Ausbildung“. ' +
+        'Ziel dieses Projekts war es, Jugendlichen aus Lao Cai, Ha Giang die Chance auf eine Ausbildung zu geben. Gemeinsam mit „Ngàn Hạc Giấy“ beteiligen wir uns an Stipendien, ' +
+        'die Jugendlichen eine Perspektive bieten soll.',
+
+    PROJECT_VS_TITLE: 'Vielfalt Stärkt',
+    PROJECT_VS_QOUTE: '“Fremd ist der Fremde nur in der Fremde” - Karl Valentin',
+    PROJECT_VS_TEXT_1: 'Flucht, Asyl, Integration - diese Themen haben die deutsche Gesellschaft in den vergangenen Jahren so stark polarisiert, wie kein anderes Thema. ' +
+        'Als 2015 eine große Zahl an Geflüchteten ihren Weg nach Deutschland fanden war klar: Das ist kein temporäres, sondern ein langfristiges Thema, welchem wir uns annehmen wollen!',
+    PROJECT_VS_TEXT_2: 'Das war die Geburtsstunde unseres Projekts “Vielfalt stärkt”. Mit “Vielfalt stärkt” möchten wir Geflüchtete bei der Integration in Deutschland unterstützen und ' +
+        'den kulturellen Austausch fördern. Denn auch ein Großteil unserer Mitglieder ist persönlich (durch ihre Eltern) mit Migrationserfahrungen und ' +
+        'den Schwierigkeiten bei der Ankunft vertraut (Boat People, Gastarbeiter, etc.)'
 
 };
 

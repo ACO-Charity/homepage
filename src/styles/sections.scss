@@ -16,6 +16,11 @@ section {
     border-radius: 20px;
     box-shadow: 50px 50px 99px #2222220F;
 
+    h3 {
+      font-weight: bold;
+      text-align: center;
+    }
+
     p {
       font-size: 1.5em;
     }
@@ -47,7 +52,7 @@ section {
         color: rgba($secondary-color, 0.3);
       }
 
-      &+hr {
+      & + hr {
         width: 500px;
         max-width: 80%;
         background-color: rgba($secondary-color, 0.3);
