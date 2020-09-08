@@ -16,6 +16,11 @@ section {
     border-radius: 20px;
     box-shadow: 50px 50px 99px #2222220F;
 
+    .btn-primary {
+      border-color: $secondary-color;
+      font-weight: bold;
+    }
+
     h3 {
       font-weight: bold;
       text-align: center;

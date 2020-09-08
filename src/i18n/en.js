@@ -19,6 +19,7 @@ const labels_en = {
     BACK: 'back',
     CONTACT: 'contact',
     EXECUTIVES: 'Executive Board',
+    JOIN_US_NOW: 'become a member now',
 
     /*TEXT*/
     IMPRINT_TEXT: imprintText.EN,
@@ -65,7 +66,9 @@ const labels_en = {
         'Many thanks for your support!',
     DONATE_TEXT_2: 'If you don\'t have Paypal or don\'t want to use Paypal, you can also transfer the donation via the following bank account:',
     DONATE_AMAZON: 'Or support us while you store! We are a registered association on Amazon Smile. Place your next Amazon order via the Amazon Smile portal, select ACO Charity e.V. ' +
-        'and Amazon will automatically donate 0.5% of the purchase amount directly to us. It can be that easy to do good! '
+        'and Amazon will automatically donate 0.5% of the purchase amount directly to us. It can be that easy to do good! ',
+
+    JOIN_TEXT: 'You want to do something good and meet cool people? Then get in touch with us and become part of our community!'
 
 };
 

@@ -19,6 +19,7 @@ const labels_de = {
     BACK: 'zurück',
     CONTACT: 'kontakt',
     EXECUTIVES: 'Vorstände',
+    JOIN_US_NOW: 'jetzt mitglied werden',
 
     /*TEXT*/
     IMPRINT_TEXT: imprintText.DE,
@@ -68,7 +69,9 @@ const labels_de = {
         'Vielen Dank für die Unterstützung!',
     DONATE_TEXT_2: 'Falls Ihr kein Paypal habt oder Paypal nicht benutzen wollt, könnt Ihr uns auch über die folgende Bankverbindung die Spende überweisen:',
     DONATE_AMAZON: 'Oder unterstütze uns während du shoppst! Wir sind ein auf Amazon Smile registrierter Verein. Tätige deine nächste Amazon-Bestellung über das Amazon Smile-Portal, ' +
-        'wähle ACO Charity e.V. aus und Amazon spendet automatisch 0,5% der Einkaufssumme direkt an uns. So einfach kann es sein, Gutes zu tun! '
+        'wähle ACO Charity e.V. aus und Amazon spendet automatisch 0,5% der Einkaufssumme direkt an uns. So einfach kann es sein, Gutes zu tun!',
+
+    JOIN_TEXT: 'Du möchtest ebenfalls etwas Gutes tun und dabei coole Leute kennenlernen? Dann melde dich bei uns und werde ein Teil unserer Community!'
 
 };
 
