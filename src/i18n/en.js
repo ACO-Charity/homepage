@@ -21,6 +21,8 @@ const labels_en = {
     EXECUTIVES: 'Executive Board',
     JOIN_US_NOW: 'become a member now',
 
+    ACO_MOTTO: 'A good deed. Many grateful hearts.',
+
     /*TEXT*/
     IMPRINT_TEXT: imprintText.EN,
     PRIVACY_TEXT: privacyText.EN,

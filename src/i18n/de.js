@@ -21,6 +21,8 @@ const labels_de = {
     EXECUTIVES: 'Vorstände',
     JOIN_US_NOW: 'jetzt mitglied werden',
 
+    ACO_MOTTO: 'Eine gute Tat. Viele dankbare Herzen.',
+
     /*TEXT*/
     IMPRINT_TEXT: imprintText.DE,
     PRIVACY_TEXT: privacyText.DE,
