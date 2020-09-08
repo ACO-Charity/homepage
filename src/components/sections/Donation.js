@@ -24,7 +24,7 @@ const Donation = props => {
                 </div>
             </div>
             <p className="mt-5">{props.label.DONATE_AMAZON}</p>
-            <a className="btn btn-primary font-weight-bold mb-5" href={links.AMAZON_SMILE} target="_blank">Amazon Smile</a>
+            <a className="btn btn-primary font-weight-bold mb-5" href={links.AMAZON_SMILE} target="_blank" rel="noopener noreferrer">Amazon Smile</a>
         </BasicSection>
     );
 };
