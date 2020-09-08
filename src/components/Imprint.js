@@ -8,8 +8,9 @@ const Imprint = props => {
       <div className="address mt-4">
         <h3>{props.label.IMPRINT_TEXT.HQ}</h3>
         <p className="mb-0">ACO Charity e.V.</p>
-        <p className="mb-0">Postfach 34 01 13</p>
-        <p className="mb-0">80098 München</p>
+          <p className="mb-0">c/o Binh Ta</p>
+          <p className="mb-0">Wilramstr. 57</p>
+          <p className="mb-0">81669 München</p>
         <span className="mb-0">E-mail: <a href={"mailto:" + links.CONTACT_MAIL_SECONDARY}>{links.CONTACT_MAIL_SECONDARY}</a></span>
       </div>
       <div id="executives" className="mt-3">
