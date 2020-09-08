@@ -9,6 +9,13 @@ section {
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 1024px){
+    .section-image-container{
+      background-position: center -100px !important;
+    }
   }
 
   .section-content {
