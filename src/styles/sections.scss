@@ -57,7 +57,6 @@ section {
 
       .title-shadow {
         position: absolute;
-        top: 0;
         width: 100%;
         font-size: 5em;
         font-weight: 900;
@@ -70,5 +69,11 @@ section {
         background-color: rgba($secondary-color, 0.3);
       }
     }
+  }
+}
+
+@media (max-width: 600px){
+  .title-shadow {
+    font-size: 3.2em !important;
   }
 }
