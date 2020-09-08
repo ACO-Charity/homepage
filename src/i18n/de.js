@@ -13,6 +13,7 @@ const labels_de = {
     PRIVACY_POLICY: 'Datenschutz',
 
     /*CTA*/
+    DONATE_NOW: 'jetzt spenden',
     CONTACT_US: 'Schreib uns',
     DONATE_BUTTON: 'Spenden',
     BACK: 'zurück',
@@ -61,7 +62,13 @@ const labels_de = {
         'Als 2015 eine große Zahl an Geflüchteten ihren Weg nach Deutschland fanden war klar: Das ist kein temporäres, sondern ein langfristiges Thema, welchem wir uns annehmen wollen!',
     PROJECT_VS_TEXT_2: 'Das war die Geburtsstunde unseres Projekts “Vielfalt stärkt”. Mit “Vielfalt stärkt” möchten wir Geflüchtete bei der Integration in Deutschland unterstützen und ' +
         'den kulturellen Austausch fördern. Denn auch ein Großteil unserer Mitglieder ist persönlich (durch ihre Eltern) mit Migrationserfahrungen und ' +
-        'den Schwierigkeiten bei der Ankunft vertraut (Boat People, Gastarbeiter, etc.)'
+        'den Schwierigkeiten bei der Ankunft vertraut (Boat People, Gastarbeiter, etc.)',
+
+    DONATE_TEXT_1: 'Um das Fortbestehen unser Spendenprojekte sicherstellen zu können, sind wir für jede Spende dankbar - unabhängig vom Betrag und egal ob einmalig oder regelmäßig. ' +
+        'Vielen Dank für die Unterstützung!',
+    DONATE_TEXT_2: 'Falls Ihr kein Paypal habt oder Paypal nicht benutzen wollt, könnt Ihr uns auch über die folgende Bankverbindung die Spende überweisen:',
+    DONATE_AMAZON: 'Oder unterstütze uns während du shoppst! Wir sind ein auf Amazon Smile registrierter Verein. Tätige deine nächste Amazon-Bestellung über das Amazon Smile-Portal, ' +
+        'wähle ACO Charity e.V. aus und Amazon spendet automatisch 0,5% der Einkaufssumme direkt an uns. So einfach kann es sein, Gutes zu tun! '
 
 };
 

@@ -2,7 +2,7 @@ a {
   color: $secondary-color !important;
 }
 
-h1{
+h1 {
   text-transform: capitalize;
 }
 
@@ -28,6 +28,10 @@ button:focus {
   }
 }
 
+a.btn-primary {
+  color: white !important;
+  padding: 8px 28px 8px 28px !important;
+}
 
 .btn-primary {
   background-color: $secondary-color !important;

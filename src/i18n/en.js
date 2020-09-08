@@ -6,6 +6,7 @@ const labels_en = {
     HOME: 'Home',
     ABOUT_US: 'about us',
     PROJECTS: 'projects',
+    DONATE_NOW: 'donate now',
     DONATION: 'donation',
     JOIN_US: 'join us',
     NEWS: 'news',
@@ -58,7 +59,13 @@ const labels_en = {
         'When a large number of refugees found their way to Germany in 2015, one thing was clear: This is not a temporary but a long-term issue that we want to address!',
     PROJECT_VS_TEXT_2: 'This was the birth of our "Vielfalt stärkt" project. With "Vielfalt stärken" (Strengthening Diversity) ' +
         'we want to support refugees in their integration in Germany and promote cultural exchange. ' +
-        'The majority of our members are also personally familiar (through their parents) with migration experiences and the difficulties they face upon arrival (boat people, guest workers, etc.)'
+        'The majority of our members are also personally familiar (through their parents) with migration experiences and the difficulties they face upon arrival (boat people, guest workers, etc.)',
+
+    DONATE_TEXT_1: 'In order to ensure the continuity of our donation projects, we are grateful for every donation - regardless of the amount and whether once or regularly.' +
+        'Many thanks for your support!',
+    DONATE_TEXT_2: 'If you don\'t have Paypal or don\'t want to use Paypal, you can also transfer the donation via the following bank account:',
+    DONATE_AMAZON: 'Or support us while you store! We are a registered association on Amazon Smile. Place your next Amazon order via the Amazon Smile portal, select ACO Charity e.V. ' +
+        'and Amazon will automatically donate 0.5% of the purchase amount directly to us. It can be that easy to do good! '
 
 };
 

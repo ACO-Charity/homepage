@@ -5,7 +5,8 @@ import pages from "../enums/pages";
 import AboutUs from './sections/AboutUs';
 import BasicSection from "./common/BasicSection";
 import {isWebpSupported} from 'react-image-webp/dist/utils';
-import ProjectsSection from './ProjectsSection';
+import ProjectsSection from './sections/ProjectsSection';
+import Donation from './sections/Donation';
 
 const LandingPage = props => {
     return (
@@ -16,19 +17,8 @@ const LandingPage = props => {
             <ACOFacts label={props.label}/>
             <ProjectsSection setCurrentSection={props.setCurrentSection}
                              label={props.label}/>
-            <BasicSection sectionId={pages.DONATION}
-                          setCurrentSection={props.setCurrentSection}
-                          sectionImage={isWebpSupported() ? require('../img/section_donate.webp') : require('../img/section_donate.jpg')}
-                          sectionTitle={props.label[pages.DONATION]}>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-                <p> aksöldksaldsaöld</p>
-                <p>asdkölsakdölsakd</p>
-                <p>sadölsak</p>
-                <p> aksöldksaldsaöld</p>
-            </BasicSection>
+            <Donation setCurrentSection={props.setCurrentSection}
+                      label={props.label}/>
             <BasicSection sectionId={pages.JOIN_US}
                           setCurrentSection={props.setCurrentSection}
                           sectionImage={isWebpSupported() ? require('../img/section_join.webp') : require('../img/section_join.jpg')}

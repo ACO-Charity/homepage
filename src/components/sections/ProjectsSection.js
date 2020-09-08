@@ -1,14 +1,14 @@
 import React from 'react';
-import pages from '../enums/pages';
+import pages from '../../enums/pages';
 import {isWebpSupported} from "react-image-webp/dist/utils";
-import languages from '../enums/languages';
-import BasicSection from './common/BasicSection';
+import languages from '../../enums/languages';
+import BasicSection from '../common/BasicSection';
 
 const ProjectsSection = props => {
     return (
         <BasicSection sectionId={pages.PROJECTS}
                       setCurrentSection={props.setCurrentSection}
-                      sectionImage={isWebpSupported() ? require('../img/section_projects.webp') : require('../img/section_projects.jpg')}
+                      sectionImage={isWebpSupported() ? require('../../img/section_projects.webp') : require('../../img/section_projects.jpg')}
                       sectionTitle={props.label[pages.PROJECTS]}>
             <p>{props.label.PROJECT_SECTION_TEXT}</p>
 
