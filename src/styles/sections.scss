@@ -1,4 +1,5 @@
 section {
+  background-color: #f9f9f9;
   position: relative;
   padding-top: 370px;
 
@@ -12,8 +13,8 @@ section {
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 1024px){
-    .section-image-container{
+  @media (max-width: 1024px) {
+    .section-image-container {
       background-position: center -100px !important;
     }
   }
@@ -78,7 +79,7 @@ section {
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .title-shadow {
     font-size: 3.2em !important;
   }
