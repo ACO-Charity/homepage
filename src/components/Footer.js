@@ -52,6 +52,7 @@ const Footer = props => {
                     </div>
                     <div className="contact-us col-9 d-flex flex-column justify-content-center">
                         <h1 className="font-weight-bold">{props.label.ACO_MOTTO}</h1>
+                        <a href={links.CONSTITUTION} target="_blank" rel="noopener noreferrer">{props.label.CONSTITUTION}</a>
                     </div>
                 </div>
                 <div className="row footer-second-line">

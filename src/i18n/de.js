@@ -31,6 +31,7 @@ const labels_de = {
     EVENTS: 'Veranstaltungen',
     DONATED: 'gespendet',
     ACO_IN_NUMBERS: 'ACO in Zahlen',
+    CONSTITUTION: 'Satzung',
 
     ABOUT_SECTION_TEXT: 'ACO Charity e.V. ist ein gemeinnütziger Verein bestehend aus sozial engagierten Jugendlichen und jungen Erwachsenen. ' +
         'Seit unserer Gründung im März 2010 setzen wir uns für sozial benachteiligte Kinder und Jugendliche ein - sowohl in Deutschland, als auch in Südostasien.',

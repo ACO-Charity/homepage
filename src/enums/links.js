@@ -7,7 +7,8 @@ const links = {
     FACEBOOK: 'https://www.facebook.com/acocharityev',
     YOUTUBE: 'https://www.youtube.com/user/ACOVerein',
     AMAZON_SMILE: 'https://smile.amazon.de',
-    BEWERBUNG: 'https://bewerbung.aco.charity'
+    BEWERBUNG: 'https://bewerbung.aco.charity',
+    CONSTITUTION: 'https://drive.google.com/file/d/1GvD3065Z8YLpbtGithHBXGCVk4p_gVB7/view'
 };
 
 export default links;

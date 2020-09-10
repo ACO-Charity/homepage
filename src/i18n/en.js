@@ -31,6 +31,7 @@ const labels_en = {
     EVENTS: 'events',
     DONATED: 'donated',
     ACO_IN_NUMBERS: 'ACO in numbers',
+    CONSTITUTION: 'constitution',
 
     ABOUT_SECTION_TEXT: 'ACO Charity e.V. is a non-profit association consisting of socially engaged young people and young adults. ' +
         'Since our foundation in March 2010, we have been committed to helping socially disadvantaged children and young people - both in Germany and in South East Asia.',
