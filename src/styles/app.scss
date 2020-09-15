@@ -31,10 +31,22 @@ button:focus {
 a.btn-primary {
   color: white !important;
   padding: 8px 28px 8px 28px !important;
+
+  &:focus {
+    box-shadow: none !important;
+  }
 }
 
 .btn-primary {
   background-color: $secondary-color !important;
+
+  &:hover, &:active {
+    color: $primary-color !important;
+  }
+
+  &:active {
+    border: 1px solid $primary-color !important;
+  }
 }
 
 .content {
