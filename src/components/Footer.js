@@ -1,4 +1,5 @@
 import React from 'react';
+import {version} from '../../package.json';
 import links from '../enums/links';
 import {Icon} from 'react-icons-kit';
 import {useHistory} from 'react-router-dom';
@@ -80,7 +81,7 @@ const Footer = props => {
                                                                                                            onClick={goPrivacyPolicy}>{props.label.PRIVACY_POLICY}</span>
                 </div>
                 <div className="footer-copyright d-flex align-items-center justify-content-center">
-                    <span>2020 © ACO Charity e.V.</span>
+                    <span title={`v${version}`}>2020 © ACO Charity e.V.</span>
                 </div>
             </div>
         </footer>
