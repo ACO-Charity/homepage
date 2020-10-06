@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {version} from '../../package.json';
 import links from '../enums/links';
 import {Icon} from 'react-icons-kit';
@@ -8,8 +8,11 @@ import {ic_mail} from 'react-icons-kit/md/ic_mail';
 import {instagram} from 'react-icons-kit/fa/instagram';
 import {youtubePlay} from 'react-icons-kit/fa/youtubePlay';
 import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial';
+import ACOModal from './common/ACOModal';
 
 const Footer = props => {
+
+    const [showConstitution, setShowConstitution] = useState(false);
 
     const mailToUs = () => {
         window.open('mailto:' + links.CONTACT_MAIL);
@@ -53,7 +56,7 @@ const Footer = props => {
                     </div>
                     <div className="contact-us col-9 d-flex flex-column justify-content-center">
                         <h1 className="font-weight-bold">{props.label.ACO_MOTTO}</h1>
-                        <a href={links.CONSTITUTION} target="_blank" rel="noopener noreferrer">{props.label.CONSTITUTION}</a>
+                        <div className="anchor-style" onClick={() => setShowConstitution(true)}>{props.label.CONSTITUTION}</div>
                     </div>
                 </div>
                 <div className="row footer-second-line">
@@ -84,6 +87,11 @@ const Footer = props => {
                     <span title={`v${version}`}>2020 © ACO Charity e.V.</span>
                 </div>
             </div>
+            {showConstitution &&
+            <ACOModal show={showConstitution} onClose={() => setShowConstitution(false)}>
+                <iframe src="https://drive.google.com/file/d/1GvD3065Z8YLpbtGithHBXGCVk4p_gVB7/preview"/>
+            </ACOModal>
+            }
         </footer>
     );
 };

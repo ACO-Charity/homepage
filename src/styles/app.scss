@@ -53,3 +53,12 @@ a.btn-primary {
   background-color: #f9f9f9;
   margin-top: 150px;
 }
+
+.anchor-style {
+  color: $secondary-color;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
