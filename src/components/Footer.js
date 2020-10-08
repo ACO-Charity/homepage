@@ -89,7 +89,7 @@ const Footer = props => {
             </div>
             {showConstitution &&
             <ACOModal show={showConstitution} onClose={() => setShowConstitution(false)}>
-                <iframe src="https://drive.google.com/file/d/1GvD3065Z8YLpbtGithHBXGCVk4p_gVB7/preview"/>
+                <embed src="/docs/satzung.pdf" type="application/pdf" width="100%" height="100%" />
             </ACOModal>
             }
         </footer>
