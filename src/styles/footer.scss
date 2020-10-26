@@ -85,6 +85,10 @@ footer {
   }
 
   @media (max-width: 755px) {
+    #footer-logo {
+      max-width: 78px;
+    }
+
     .cta-contact,
     .contact-us {
       padding-left: 20px;
