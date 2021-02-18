@@ -5,10 +5,12 @@ import languages from '../../enums/languages';
 import BasicSection from '../common/BasicSection';
 
 const ProjectsSection = props => {
+    const sectionImage = isWebpSupported() ? require('../../img/section_projects.webp') : require('../../img/section_projects.jpg')
+
     return (
         <BasicSection sectionId={pages.PROJECTS}
                       setCurrentSection={props.setCurrentSection}
-                      sectionImage={isWebpSupported() ? require('../../img/section_projects.webp') : require('../../img/section_projects.jpg')}
+                      sectionImage={sectionImage.default}
                       sectionTitle={props.label[pages.PROJECTS]}>
             <p>{props.label.PROJECT_SECTION_TEXT}</p>
 

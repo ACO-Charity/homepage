@@ -5,10 +5,12 @@ import BasicSection from '../common/BasicSection';
 import links from '../../enums/links';
 
 const Donation = props => {
+    const sectionImage = isWebpSupported() ? require('../../img/section_donate.webp') : require('../../img/section_donate.jpg')
+
     return (
         <BasicSection sectionId={pages.DONATION}
                       setCurrentSection={props.setCurrentSection}
-                      sectionImage={isWebpSupported() ? require('../../img/section_donate.webp') : require('../../img/section_donate.jpg')}
+                      sectionImage={sectionImage.default}
                       sectionTitle={props.label[pages.DONATION]}>
             <p>{props.label.DONATE_TEXT_1}</p>
             <button className="btn btn-primary font-weight-bold mb-5" onClick={() => {

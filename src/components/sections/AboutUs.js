@@ -3,12 +3,15 @@ import pages from '../../enums/pages';
 import BasicSection from '../common/BasicSection';
 import {isWebpSupported} from "react-image-webp/dist/utils";
 
+
 const AboutUs = props => {
+    const sectionImage = isWebpSupported() ? require('../../img/section_about.webp') : require('../../img/section_about.jpg')
+
     return (
         <BasicSection
             setCurrentSection={props.setCurrentSection}
             sectionId={pages.ABOUT_US}
-            sectionImage={isWebpSupported() ? require('../../img/section_about.webp') : require('../../img/section_about.jpg')}
+            sectionImage={sectionImage.default}
             sectionTitle={props.label[pages.ABOUT_US]}>
             <p>{props.label.ABOUT_SECTION_TEXT}</p>
             <p>{props.label.ABOUT_SECTION_TEXT_2}</p>
