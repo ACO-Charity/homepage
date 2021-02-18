@@ -47,6 +47,8 @@ const Footer = props => {
         }, 100);
     };
 
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer>
             <div className="container">
@@ -84,7 +86,7 @@ const Footer = props => {
                                                                                                            onClick={goPrivacyPolicy}>{props.label.PRIVACY_POLICY}</span>
                 </div>
                 <div className="footer-copyright d-flex align-items-center justify-content-center">
-                    <span title={`v${version}`}>2020 © ACO Charity e.V.</span>
+                    <span title={`v${version}`}>{currentYear} © ACO Charity e.V.</span>
                 </div>
             </div>
             {showConstitution &&
