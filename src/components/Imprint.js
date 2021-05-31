@@ -24,7 +24,7 @@ const Imprint = props => {
                 <ol>
                     <li>Bao Ngoc Nguyen</li>
                     <li>Than Son Phan</li>
-                    <li>Nguyen The Loc</li>
+                    <li>The Loc Nguyen</li>
                 </ol>
             </div>
             <div id="registry" className="mt-3">
