@@ -1,5 +1,5 @@
 import React from 'react';
-import links from "../enums/links";
+import links from '../enums/links';
 
 const Imprint = props => {
     return (
@@ -10,7 +10,7 @@ const Imprint = props => {
                 <p className="mb-0">ACO Charity e.V.</p>
                 <p className="mb-0">Postfach 34 01 13</p>
                 <p className="mb-0">80098 München</p>
-                <span className="mb-0">E-mail: <a href={"mailto:" + links.CONTACT_MAIL_SECONDARY}>{links.CONTACT_MAIL_SECONDARY}</a></span>
+                <span className="mb-0">E-mail: <a href={'mailto:' + links.CONTACT_MAIL_SECONDARY}>{links.CONTACT_MAIL_SECONDARY}</a></span>
             </div>
             <div className="address mt-4">
                 <h3>{props.label.IMPRINT_TEXT.HQ}</h3>
@@ -22,9 +22,9 @@ const Imprint = props => {
             <div id="executives" className="mt-3">
                 <h3>{props.label.EXECUTIVES}</h3>
                 <ol>
-                    <li>Binh Ta</li>
-                    <li>Shayla Giap</li>
-                    <li>Sonja Huyen Schotte</li>
+                    <li>Bao Ngoc Nguyen</li>
+                    <li>Than Son Phan</li>
+                    <li>Nguyen The Loc</li>
                 </ol>
             </div>
             <div id="registry" className="mt-3">
