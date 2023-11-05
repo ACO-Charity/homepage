@@ -1,6 +1,7 @@
 import {useEffect} from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.scss';
+import Footer from './components/footer/Footer.tsx';
 import Header from './components/header/Header.tsx';
 import ImprintPage from './components/pages/ImprintPage.tsx';
 import LandingPage from './components/pages/LandingPage.tsx';
@@ -35,6 +36,7 @@ function App() {
                     <Route path="/imprint" Component={ImprintPage}/>
                     <Route path="/" Component={LandingPage}/>
                 </Routes>
+                <Footer/>
             </div>
         </BrowserRouter>
     );

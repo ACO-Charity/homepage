@@ -1,0 +1,118 @@
+@import 'src/styles/colors';
+
+footer {
+  padding-top      : 2em;
+  background-color : $primary-color;
+  color            : white;
+  font-weight      : bold;
+
+  hr {
+    border-color : rgba(255, 255, 255, 0.4);
+  }
+
+  .footer-second-line {
+    margin-top : 20px;
+  }
+
+  .contact-us {
+
+    margin-top : 6px;
+
+    h1 {
+      font-size     : 30px;
+      margin-bottom : 0;
+    }
+
+    p {
+      font-weight : normal;
+      font-size   : 25px;
+    }
+  }
+
+  #footer-logo {
+    max-width : 200px;
+  }
+
+  .footer-links {
+    font-weight    : normal;
+    padding-bottom : 1em;
+
+    .footer-link {
+      cursor         : pointer;
+      color          : white !important;
+      text-transform : uppercase;
+      padding        : 0 1em;
+
+      &:hover {
+        color : $secondary-color !important;
+      }
+    }
+  }
+
+  .socialmedia {
+    width           : 100%;
+    justify-content : space-evenly;
+
+    .sm-item {
+      display     : flex;
+      align-items : center;
+      cursor      : pointer;
+
+      &:hover {
+        svg {
+          color : $secondary-color;
+        }
+      }
+    }
+  }
+
+  .cta-contact,
+  .contact-us {
+    padding-left : 80px;
+  }
+
+  .cta-contact {
+    button.btn.btn-icon.btn-primary {
+      font-size   : 20px;
+      font-weight : bold;
+      height      : 50px !important;
+      padding     : 0 40px !important;
+    }
+  }
+
+  .footer-copyright {
+    font-weight    : normal;
+    padding-bottom : 1em;
+    cursor         : default;
+  }
+
+  @media (max-width : 755px) {
+    #footer-logo {
+      max-width : 78px;
+    }
+
+    .cta-contact,
+    .contact-us {
+      padding-left : 20px;
+
+      h1 {
+        font-size : 1.5em;
+      }
+
+      button.btn.btn-icon.btn-primary {
+        font-size : 16px;
+      }
+    }
+
+    .socialmedia {
+      .sm-item {
+        svg {
+          width        : 26px;
+          margin-right : 2px;
+          margin-left  : 2px;
+        }
+      }
+    }
+  }
+
+}
