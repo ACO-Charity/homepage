@@ -9,6 +9,7 @@ import icon from '../../assets/img/Aco_Logo_Weiss.svg';
 import {Links} from '../../enums/Links.ts';
 import {Pages} from '../../enums/Pages.ts';
 import {useScrollPosition} from '../../stores/ScrollPositionStore.ts';
+import LanguageSelector from '../language-selector/LanguageSelector.tsx';
 import './header.scss';
 
 export interface HeaderProps {
@@ -66,9 +67,7 @@ const Header = (props: HeaderProps) => {
                 <div className="container">
                     <div className="d-flex justify-content-center align-items-center">
                         <img id="nav-logo" className="mr-5" src={icon} alt="LOGO"/>
-                        {/*
-                        TODO
-                        <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage} />*/}
+                        <LanguageSelector/>
                     </div>
                     {
                         !isScrolling &&
@@ -104,9 +103,7 @@ const Header = (props: HeaderProps) => {
                                 isScrolling &&
                                 <>
                                     <div className="nav-item">
-                                        {/*
-                                        TODO
-                                        <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>*/}
+                                        <LanguageSelector/>
                                     </div>
                                     <div className="nav-item" style={{
                                         marginLeft: 'auto',
@@ -125,8 +122,7 @@ const Header = (props: HeaderProps) => {
                             {
                                 isScrolling &&
                                 <div className="nav-item">
-                                    {/* TODO
-                                    <LanguageSelector selectedLanguage={props.selectedLanguage} setSelectedLanguage={props.setSelectedLanguage}/>*/}
+                                    <LanguageSelector/>
                                 </div>
                             }
                             <img id="nav-logo-scroll" src={icon} alt="LOGO"/>
