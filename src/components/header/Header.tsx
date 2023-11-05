@@ -4,23 +4,26 @@ import {useLocation, useNavigate} from 'react-router-dom';
 import icon from '../../assets/img/Aco_Logo_Weiss.svg';
 import {Links} from '../../enums/Links.ts';
 import {Pages} from '../../enums/Pages.ts';
+import {useScrollPosition} from '../../stores/ScrollPositionStore.ts';
 import './header.scss';
 
 export interface HeaderProps {
-    scrollPosY: number;
     currentSection?: string;
 }
 
 const Header = (props: HeaderProps) => {
     const {t} = useTranslation();
+    const {scrollPosY} = useScrollPosition();
     const [showMobileNav, setShowMobileNav] = useState(false);
     const [inited, setInited] = useState(false);
 
-    const isScrolling = props.scrollPosY > 40;
+    const isScrolling = scrollPosY > 40;
     const location = useLocation();
     const navigate = useNavigate();
 
     const headerStyleClass = isScrolling ? 'scrolling' : '';
+
+    console.debug('scrollPosY', scrollPosY);
 
     useEffect(() => {
         return () => {
