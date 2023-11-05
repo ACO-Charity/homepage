@@ -1,0 +1,17 @@
+.folding-component {
+
+  .folding-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .folding-title {
+      margin-bottom: 0;
+      margin-right: 1em;
+    }
+  }
+
+  .folding-content {
+    margin-top: 1em;
+  }
+}
