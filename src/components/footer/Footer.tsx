@@ -82,8 +82,8 @@ const Footer = () => {
                 </div>
                 <hr/>
                 <div className="footer-links d-flex align-items-center justify-content-center">
-                    <span className="footer-link" onClick={goImprint}>{t('IMPRINT')}</span> | <span className="footer-link"
-                                                                                                    onClick={goPrivacyPolicy}>{t('PRIVACY_POLICY')}</span>
+                    <span className="footer-link" onClick={goImprint}>{t('PAGES.IMPRINT')}</span> | <span className="footer-link"
+                                                                                                          onClick={goPrivacyPolicy}>{t('PAGES.PRIVACY_POLICY')}</span>
                 </div>
                 <div className="footer-copyright d-flex align-items-center justify-content-center">
                     <span title={`v${version}`}>{currentYear} © ACO Charity e.V.</span>
