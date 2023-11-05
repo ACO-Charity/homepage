@@ -1,11 +1,11 @@
-import {create, StoreApi, UseBoundStore} from 'zustand';
+import {create} from 'zustand';
 
 interface SectionStore {
     currentSection: string;
     setCurrentSection: (section: string) => void;
 }
 
-export const useSection: UseBoundStore<StoreApi<SectionStore>> = create((set) => {
+export const useSection = create<SectionStore>((set) => {
     return {
         currentSection: '',
         setCurrentSection: (section: string) => set(() => ({currentSection: section}))
