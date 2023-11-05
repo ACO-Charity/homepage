@@ -18,7 +18,6 @@ const AcoFacts = () => {
 
     useEffect(() => {
         AcoApi.getMembercount().then(res => {
-            console.debug('res', res);
             setMemberCount(res.data);
         });
     }, []);

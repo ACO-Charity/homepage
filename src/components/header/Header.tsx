@@ -1,5 +1,9 @@
 import {useEffect, useState} from 'react';
 import {useTranslation} from 'react-i18next';
+import {Icon} from 'react-icons-kit';
+import {ic_favorite} from 'react-icons-kit/md/ic_favorite';
+import {ic_keyboard_backspace} from 'react-icons-kit/md/ic_keyboard_backspace';
+import {ic_menu} from 'react-icons-kit/md/ic_menu';
 import {useLocation, useNavigate} from 'react-router-dom';
 import icon from '../../assets/img/Aco_Logo_Weiss.svg';
 import {Links} from '../../enums/Links.ts';
@@ -92,8 +96,7 @@ const Header = (props: HeaderProps) => {
                             {
                                 !isLandingPage() &&
                                 <div className="nav-item d-flex align-items-center" onClick={goLandingPage}>
-                                    {/*TODO*/}
-                                    {/* <Icon size={26} icon={ic_keyboard_backspace}/><span className="ml-2">{props.label.BACK}</span>*/}
+                                    <Icon size={26} icon={ic_keyboard_backspace}/><span className="ml-2">{t('CTA.BACK')}</span>
                                 </div>
                             }
 
@@ -110,9 +113,7 @@ const Header = (props: HeaderProps) => {
                                         marginRight: '0'
                                     }}>
                                         <button className="btn btn-icon btn-primary" onClick={onDonationClick}>
-                                            {/*
-                                            TODO
-                                            <Icon icon={ic_favorite}/>*/}
+                                            <Icon icon={ic_favorite}/>
                                             {t('CTA.DONATE_BUTTON')}
                                         </button>
                                     </div>
@@ -132,13 +133,11 @@ const Header = (props: HeaderProps) => {
                             {
                                 isLandingPage() ?
                                     <div className={'nav-item ' + (showMobileNav ? 'active' : '')} onClick={toggleMobileNav}>
-                                        {/* TODO
-                                       <Icon size={30} icon={ic_menu}/>*/}
+                                        <Icon size={30} icon={ic_menu}/>
                                     </div>
                                     :
                                     <div className="nav-item d-flex align-items-center" onClick={goLandingPage}>
-                                        {/* TODO
-                                        <Icon size={26} icon={ic_keyboard_backspace}/>*/}
+                                        <Icon size={26} icon={ic_keyboard_backspace}/>
                                         <span className="ml-2">{t('CTA.BACK')}</span>
                                     </div>
                             }
