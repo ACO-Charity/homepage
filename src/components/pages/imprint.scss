@@ -1,0 +1,16 @@
+@import 'src/styles/colors';
+
+#imprint {
+  margin-top : 170px;
+
+  a {
+    color : $primary-color !important;
+  }
+
+  #executives {
+    ol {
+      padding     : 1em;
+      padding-top : 0;
+    }
+  }
+}

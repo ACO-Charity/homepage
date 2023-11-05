@@ -1,0 +1,13 @@
+@import 'src/styles/colors';
+
+#DONATION {
+  .banking-info {
+    p {
+      margin-bottom : 0;
+    }
+  }
+
+  .btn {
+    border-color : $secondary-color;
+  }
+}

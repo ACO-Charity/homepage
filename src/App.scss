@@ -1,0 +1,66 @@
+@import 'src/styles/colors';
+
+a {
+  color : $secondary-color !important;
+}
+
+h1 {
+  text-transform : capitalize;
+}
+
+button:focus {
+  box-shadow : none !important;
+}
+
+.btn {
+  height         : 40px !important;
+  padding        : 0 28px !important;
+  border-radius  : 10px !important;
+  text-transform : uppercase;
+
+  &.btn-icon {
+    display     : flex;
+    align-items : center;
+
+    i {
+      display      : flex !important;
+      align-items  : center;
+      margin-right : 8px;
+    }
+  }
+}
+
+a.btn-primary {
+  color   : white !important;
+  padding : 8px 28px 8px 28px !important;
+
+  &:focus {
+    box-shadow : none !important;
+  }
+}
+
+.btn-primary {
+  background-color : $secondary-color !important;
+
+  &:hover, &:active {
+    color : $primary-color !important;
+  }
+
+  &:active {
+    border : 1px solid $primary-color !important;
+  }
+}
+
+.content {
+  background-color : #f9f9f9;
+  margin-top       : 150px;
+}
+
+.anchor-style {
+  color  : $secondary-color;
+  cursor : pointer;
+
+  &:hover {
+    text-decoration : underline;
+  }
+}
