@@ -15,7 +15,7 @@ const JoinUs = () => {
             <p>{t('JOIN_TEXT')}</p>
             <button className="btn btn-primary" onClick={() => {
                 window.open(`mailto:${Links.HR_MAIL}`);
-            }}>{t('JOIN_US_NOW')}</button>
+            }}>{t('CTA.JOIN_US_NOW')}</button>
         </BasicSections>
     );
 };
