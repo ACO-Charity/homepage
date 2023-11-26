@@ -42,7 +42,7 @@ const AcoFacts = () => {
                                     <FactsNumber num={17} text={t('PROJECTS')}/>
                                 </div>
                                 <div className="col-12 col-md-3">
-                                    <FactsNumber num={60058.37} text={t('DONATED')} unit={'€'}/>
+                                    <FactsNumber num={98668.37} text={t('DONATED')} unit={'€'}/>
                                 </div>
                             </div>
                         }
