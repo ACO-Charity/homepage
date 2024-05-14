@@ -9,25 +9,19 @@ const ImprintPage = () => {
         <div id="imprint" className="jumbotron container">
             <h1>{t('PAGES.IMPRINT')}</h1>
             <div className="address mt-4">
-                <h3>{t('IMPRINT_TEXT.POSTAL')}</h3>
-                <p className="mb-0">ACO Charity e.V.</p>
-                <p className="mb-0">Postfach 34 01 13</p>
-                <p className="mb-0">80098 München</p>
-                <span className="mb-0">E-mail: <a href={'mailto:' + Links.CONTACT_MAIL_SECONDARY}>{Links.CONTACT_MAIL_SECONDARY}</a></span>
-            </div>
-            <div className="address mt-4">
                 <h3>{t('IMPRINT_TEXT.HQ')}</h3>
                 <p className="mb-0">ACO Charity e.V.</p>
-                <p className="mb-0">c/o Binh Ta</p>
-                <p className="mb-0">Wilramstr. 57</p>
-                <p className="mb-0">81669 München</p>
+                <p className="mb-0">Breisacher Str. 12</p>
+                <p className="mb-0">81667 München</p>
+                <span className="mb-0">E-mail: <a href={'mailto:' + Links.CONTACT_MAIL_SECONDARY}>{Links.CONTACT_MAIL_SECONDARY}</a></span>
+
             </div>
             <div id="executives" className="mt-3">
                 <h3>{t('CTA.EXECUTIVES')}</h3>
                 <ol>
+                    <li>Maily Pham</li>
+                    <li>Quoc Binh Ta</li>
                     <li>Bao Ngoc Nguyen</li>
-                    <li>Than Son Phan</li>
-                    <li>The Loc Nguyen</li>
                 </ol>
             </div>
             <div id="registry" className="mt-3">
